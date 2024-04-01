@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en-IN" dir="ltr">
+
+<head>
+    <title>Checkout - Amkette</title>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, user-scalable=0" />
+    <meta name="referrer" content="origin" /> -->
+    <!-- <link rel="preconnect" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/" crossorigin /> -->
+    <!-- <link rel="dns-prefetch" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/" crossorigin /> -->
+    <!-- <link rel="preconnect" href="https://checkout.shopifycs.com" crossorigin /> -->
+    <!-- <link rel="dns-prefetch" href="https://checkout.shopifycs.com" crossorigin /> -->
+    <!-- <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin /> -->
+    <!-- <link rel="dns-prefetch" href="https://fonts.shopifycdn.com" crossorigin /> -->
+    <!-- <link rel="preload"
+        href="https://fonts.shopifycdn.com/lato/lato_n4.c86cddcf8b15d564761aaa71b6201ea326f3648b.woff2?h1=YW1rZXR0ZS5jb20&amp;hmac=da571e717189914f28bcd24de650fc385eed40854f8321ac8f27df46031045e5"
+        as="font" type="font/woff2" crossorigin />
+    <link rel="preload"
+        href="https://fonts.shopifycdn.com/lato/lato_n7.f0037142450bd729bdf6ba826f5fdcd80f2787ba.woff2?h1=YW1rZXR0ZS5jb20&amp;hmac=134fceda407873d106668a0f7febdd34ec4b1af66c6a7e345912b509c9df68a1"
+        as="font" type="font/woff2" crossorigin /> -->
+    <style>
+        @font-face {
+            font-family: 'Lato';
+            src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.shopifycdn.com/lato/lato_n4.c86cddcf8b15d564761aaa71b6201ea326f3648b.woff2?h1=YW1rZXR0ZS5jb20&hmac=da571e717189914f28bcd24de650fc385eed40854f8321ac8f27df46031045e5) format('woff2'), url(https://fonts.shopifycdn.com/lato/lato_n4.e0ee1e2c008a0f429542630edf70be01045ac5e9.woff?h1=YW1rZXR0ZS5jb20&hmac=b582f266d50e7181e383bb3a97e0cc65e4c51f9a3fa844f9784451ec12866f2c) format('woff');
+            font-style: normal;
+            font-weight: 400;
+        }
+
+        @font-face {
+            font-family: 'Lato';
+            src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.shopifycdn.com/lato/lato_n7.f0037142450bd729bdf6ba826f5fdcd80f2787ba.woff2?h1=YW1rZXR0ZS5jb20&hmac=134fceda407873d106668a0f7febdd34ec4b1af66c6a7e345912b509c9df68a1) format('woff2'), url(https://fonts.shopifycdn.com/lato/lato_n7.50161a3d4f05d049b7407d86c5a8834e4d6e29bf.woff?h1=YW1rZXR0ZS5jb20&hmac=08778e0b96798b0dfa814c2c864a66ebe522ce39c120f7fc6c8a3ed389ed0318) format('woff');
+            font-style: normal;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body class="Loading">
+    <style>
+        :root {
+
+            --x-skeleton--global-accent: #ec6b0f;
+
+            --x-skeleton-color-schemes-scheme1-base-background: #ffffff;
+            --x-skeleton-color-schemes-scheme1-base-accent: #ec6b0f;
+            --x-skeleton-color-schemes-scheme1-base-backgroundSubdued: #f6f6f6;
+            --x-skeleton-color-schemes-scheme1-base-border: #dfdfdf;
+            --x-skeleton-color-schemes-scheme1-base-text: #000000;
+            --x-skeleton-color-schemes-scheme1-base-textContrast: #ffffff;
+            --x-skeleton-color-schemes-scheme1-base-textSubdued: #0000008f;
+            --x-skeleton-color-schemes-scheme1-base-textSubdued200: #0000001a;
+
+            --x-skeleton-color-schemes-scheme2-base-background: #ffffff;
+            --x-skeleton-color-schemes-scheme2-base-accent: #ec6b0f;
+            --x-skeleton-color-schemes-scheme2-base-backgroundSubdued: #f6f6f6;
+            --x-skeleton-color-schemes-scheme2-base-border: #dfdfdf;
+            --x-skeleton-color-schemes-scheme2-base-text: #000000;
+            --x-skeleton-color-schemes-scheme2-base-textContrast: #ffffff;
+            --x-skeleton-color-schemes-scheme2-base-textSubdued: #0000008f;
+            --x-skeleton-color-schemes-scheme2-base-textSubdued200: #0000001a;
+
+            --x-skeleton-default-color-background: var(--x-skeleton-color-schemes-scheme1-base-background);
+            --x-skeleton-default-color-accent: var(--x-skeleton-color-schemes-scheme1-base-accent);
+            --x-skeleton-default-color-backgroundSubdued: var(--x-skeleton-color-schemes-scheme1-base-backgroundSubdued);
+            --x-skeleton-default-color-border: var(--x-skeleton-color-schemes-scheme1-base-border);
+            --x-skeleton-default-color-text: var(--x-skeleton-color-schemes-scheme1-base-text);
+            --x-skeleton-default-color-textContrast: var(--x-skeleton-color-schemes-scheme1-base-textContrast);
+            --x-skeleton-default-color-textSubdued: var(--x-skeleton-color-schemes-scheme1-base-textSubdued);
+            --x-skeleton-default-color-textSubdued200: var(--x-skeleton-color-schemes-scheme1-base-textSubdued200);
+
+            --x-skeleton-typography-line-small: 1.2;
+            --x-skeleton-typography-line-base: 1.5;
+            --x-skeleton-line-quantity-size: 2.1rem;
+
+            --x-skeleton-typography-size-small: 1.2rem;
+            --x-skeleton-typography-size-default: 1.4rem;
+            --x-skeleton-typography-size-medium: 1.6rem;
+            --x-skeleton-typography-size-large: 1.9rem;
+            --x-skeleton-typography-size-extra-extra-large: 2.4rem;
+
+            --x-skeleton-typography-primary-weight-bold: 400;
+            --x-skeleton-typography-primary-fonts: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+            --x-skeleton-typography-secondary-weight-bold: 700;
+            --x-skeleton-typography-secondary-fonts: Lato;
+
+            --x-skeleton-spacing-small-100: 1.1rem;
+            --x-skeleton-spacing-small-200: 0.9rem;
+            --x-skeleton-spacing-small-300: 0.7rem;
+            --x-skeleton-spacing-small-500: 0.3rem;
+            --x-skeleton-spacing-base: 1.4rem;
+            --x-skeleton-spacing-large-100: 1.7rem;
+            --x-skeleton-spacing-large-200: 2.1rem;
+            --x-skeleton-spacing-large-300: 2.6rem;
+            --x-skeleton-spacing-large-400: 3.2rem;
+            --x-skeleton-spacing-large-500: 3.8rem;
+
+            --x-skeleton-border-radius-none: 0;
+            --x-skeleton-border-radius-base: 5px;
+            --x-skeleton-border-radius-small: 2px;
+            --x-skeleton-border-radius-large: 10px;
+        }
+
+
+
+        *,
+        :after,
+        :before {
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            width: 100%;
+        }
+
+        html {
+            -webkit-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+            font-size: 62.5%;
+            font-family: var(--x-skeleton-typography-primary-fonts);
+            line-height: var(--x-skeleton-typography-line-base);
+        }
+
+        body {
+            -webkit-font-smoothing: subpixel-antialiased;
+            overflow-wrap: break-word;
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+
+        /* TODO: need to take it out of the accessibility tree, too? */
+        body.Loading>.LoadingShell {
+            opacity: 1;
+        }
+
+
+        .BlockStack {
+            display: grid;
+        }
+
+        .BlockStack--spacing-small500 {
+            gap: var(--x-skeleton-spacing-small-500);
+        }
+
+        .BlockStack--spacing-small300 {
+            gap: var(--x-skeleton-spacing-small-300);
+        }
+
+        .BlockStack--spacing-small100 {
+            gap: var(--x-skeleton-spacing-small-100);
+        }
+
+        .BlockStack--spacing-base {
+            gap: var(--x-skeleton-spacing-base);
+        }
+
+        .BlockStack--spacing-large100 {
+            gap: var(--x-skeleton-spacing-large-100);
+        }
+
+        .BlockStack--spacing-large200 {
+            gap: var(--x-skeleton-spacing-large-200);
+        }
+
+        .BlockStack--min-inline-size-full {
+            flex: 1;
+        }
+
+        .BlockStack--inline-alignment-center {
+            justify-items: center;
+        }
+
+        .LoadingHeaderHeading {
+            margin: 0;
+            font-size: var(--x-skeleton-typography-size-extra-extra-large);
+            font-weight: var(--x-skeleton-typography-secondary-weight-bold);
+            font-family: var(--x-skeleton-typography-secondary-fonts);
+            line-height: var(--x-skeleton-typography-line-small);
+        }
+
+        .LoadingHeaderImage {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .CartIcon {
+            min-width: calc(var(--x-skeleton-typography-size-default) * 24 / 14);
+            min-height: calc(var(--x-skeleton-typography-size-default) * 24 / 14);
+            width: calc(var(--x-skeleton-typography-size-default) * 24 / 14);
+            height: calc(var(--x-skeleton-typography-size-default) * 24 / 14);
+            color: var(--x-skeleton-color-schemes-scheme1-base-accent, var(--x-skeleton--global-accent));
+        }
+
+        .CartIcon__svg {
+            display: block;
+            fill: none;
+            stroke: var(--x-skeleton-cart-color, currentColor);
+        }
+
+        .CartIcon__svg path,
+        .CartIcon__svg circle {
+            stroke-width: 1.4px;
+            vector-effect: non-scaling-stroke;
+        }
+
+        .InlineStack {
+            display: flex;
+            min-height: 100%;
+            min-width: 100%;
+        }
+
+        .InlineStack--spacing-base {
+            column-gap: var(--x-skeleton-spacing-base);
+        }
+
+        .InlineStack--spacing-small100 {
+            column-gap: var(--x-skeleton-spacing-small-100);
+        }
+
+        .InlineStack--spacing-large200 {
+            column-gap: var(--x-skeleton-spacing-large-200);
+        }
+
+        .InlineStack--inline-alignment-spaceBetween {
+            justify-content: space-between;
+        }
+
+        .InlineStack--block-alignment-start {
+            align-items: start;
+        }
+
+        .InlineStack--block-alignment-center {
+            align-items: center;
+        }
+
+        .Divider {
+            width: 100%;
+            height: 1px;
+            background-color: var(--x-skeleton-color-schemes-scheme1-base-border);
+        }
+
+        .SkeletonButton {
+            background-color: var(--x-skeleton-color-schemes-scheme1-base-textSubdued200);
+            border-radius: var(--x-skeleton-border-radius-base);
+            animation: SkeletonPulse 4000ms ease infinite;
+            width: 100%;
+        }
+
+        .SkeletonButtonInner {
+            width: 100%;
+            height: 4.8rem;
+        }
+
+        .SkeletonImage {
+            background-color: var(--x-skeleton-default-color-textSubdued200);
+            animation: SkeletonPulse 4000ms ease infinite;
+            width: 100%;
+        }
+
+        .SkeletonImage--corner-radius-small {
+            border-radius: var(--x-skeleton-border-radius-small);
+        }
+
+        .SkeletonImage--corner-radius-base {
+            border-radius: var(--x-skeleton-border-radius-base);
+        }
+
+        .SkeletonImage--corner-radius-large {
+            border-radius: var(--x-skeleton-border-radius-large);
+        }
+
+        .SkeletonImageInner {
+            width: 100%;
+            height: 100%;
+        }
+
+        @supports (aspect-ratio: 1) {
+            .SkeletonImage {
+                aspect-ratio: 1;
+            }
+        }
+
+        @supports not (aspect-ratio: 1) {
+            .SkeletonImage::before {
+                content: "";
+                height: 0;
+                display: block;
+                padding-bottom: 100%;
+                padding-bottom: calc(100% / 1);
+            }
+        }
+
+        .SkeletonText {
+            background-color: var(--x-skeleton-default-color-textSubdued200);
+            border-radius: var(--x-skeleton-border-radius-base);
+            animation: SkeletonPulse 4000ms ease infinite;
+        }
+
+        .SkeletonTextInner {
+            display: inline-block;
+        }
+
+        .SkeletonTextInner--inline-size-small {
+            width: 10ch;
+        }
+
+        .SkeletonTextInner--inline-size-base {
+            width: 20ch;
+        }
+
+        .SkeletonTextInner--inline-size-large {
+            width: 30ch;
+        }
+
+        .SkeletonTextInner--inline-size-full {
+            width: 100%;
+        }
+
+        .Icon {
+            fill: none;
+            color: var(--x-skeleton-default-color-border);
+            stroke: currentColor;
+        }
+
+        .Icon path {
+            vector-effect: non-scaling-stroke;
+            stroke-width: 1.4px;
+        }
+
+        .LoadingShellLineItems {
+            display: grid;
+            grid-auto-flow: row;
+            align-items: stretch;
+            gap: var(--x-skeleton-spacing-base);
+        }
+
+        .LoadingShellLine {
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            gap: var(--x-skeleton-spacing-base);
+            align-items: center;
+            font-size: var(--x-type-size-base);
+        }
+
+        .LoadingShellLineImageWrapper {
+            width: 6.4rem;
+            height: 6.4rem;
+            position: relative;
+        }
+
+        .LoadingShellLineImage {
+            width: 6.4rem;
+            height: 6.4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            object-fit: contain;
+            background: var(--x-skeleton-default-color-backgroundSubdued);
+        }
+
+        .LoadingShellLineImage--border-full {
+            border: 1px solid var(--x-skeleton-default-color-border);
+        }
+
+        .LoadingShellLineImage--corner-radius-small {
+            border-radius: var(--x-skeleton-border-radius-small);
+        }
+
+        .LoadingShellLineImage--corner-radius-base {
+            border-radius: var(--x-skeleton-border-radius-base);
+        }
+
+        .LoadingShellLineImage--corner-radius-large {
+            border-radius: var(--x-skeleton-border-radius-large);
+        }
+
+        .LoadingShellLineImageIcon {
+            width: 3.3rem;
+            height: 3.3rem;
+        }
+
+        .LoadingShellLineQuantity {
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translate(25%, -50%);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 2.2rem;
+            min-height: 2.2rem;
+            padding: 0 var(--x-skeleton-spacing-small-300);
+            border-radius: 1.1rem;
+            background: var(--x-skeleton-default-color-textSubdued);
+            color: var(--x-skeleton-default-color-textContrast);
+            font-size: var(--x-skeleton-typography-size-small);
+            font-weight: 500;
+        }
+
+        .LoadingShellLineContent {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .LoadingShellLinePrice {
+            min-height: 6.4rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .Text {
+            font-size: var(--x-skeleton-typography-size-default);
+        }
+
+        .Text--size-small {
+            font-size: var(--x-skeleton-typography-size-small);
+        }
+
+        .Text--size-large {
+            font-size: var(--x-skeleton-typography-size-large);
+        }
+
+        .Text--size-extraExtraLarge {
+            font-size: var(--x-skeleton-typography-size-extra-extra-large);
+        }
+
+        .Text--appearance-subdued {
+            color: var(--x-skeleton-default-color-textSubdued);
+        }
+
+        .SkeletonExpressCheckoutButtons {
+            display: grid;
+            gap: var(--x-skeleton-spacing-small-100);
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .SkeletonExpressCheckoutButtons>*:first-child {
+            grid-column: 1 / -1;
+        }
+
+        .SkeletonExpressCheckout {
+            margin-bottom: var(--x-skeleton-spacing-large-500);
+        }
+
+        .ExpressCheckoutDivider {
+            display: flex;
+            place-items: center;
+            height: 21px;
+            padding-top: calc(var(--x-skeleton-spacing-large-500) - 1px);
+        }
+
+        @media screen and (min-width: 1000px) {
+            .SkeletonExpressCheckoutButtons {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .SkeletonExpressCheckoutButtons>*:first-child {
+                grid-column: auto;
+            }
+        }
+
+        .LoadingShellHeader--banner {
+            background-position: 50% 50%;
+            background-size: cover;
+            background-image: var(--x-skeleton-banner-image);
+            --x-skeleton-header-shop-name-color: #fff;
+            --x-skeleton-cart-color: #fff;
+        }
+
+        .ColorScheme2 {
+            --x-skeleton-default-color-background: var(--x-skeleton-color-schemes-scheme2-base-background);
+            --x-skeleton-default-color-accent: var(--x-skeleton-color-schemes-scheme2-base-accent);
+            --x-skeleton-default-color-backgroundSubdued: var(--x-skeleton-color-schemes-scheme2-base-backgroundSubdued);
+            --x-skeleton-default-color-border: var(--x-skeleton-color-schemes-scheme2-base-border);
+            --x-skeleton-default-color-text: var(--x-skeleton-color-schemes-scheme2-base-text);
+            --x-skeleton-default-color-textContrast: var(--x-skeleton-color-schemes-scheme2-base-textContrast);
+            --x-skeleton-default-color-textSubdued: var(--x-skeleton-color-schemes-scheme2-base-textSubdued);
+            --x-skeleton-default-color-textSubdued200: var(--x-skeleton-color-schemes-scheme2-base-textSubdued200);
+
+            background-color: var(--x-skeleton-default-color-background);
+            color: var(--x-skeleton-default-color-text);
+        }
+
+        .VisuallyHidden {
+            border-width: 0;
+            clip: rect(0, 0, 0, 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+            white-space: nowrap;
+        }
+
+        .FadeIn {
+            opacity: 0;
+            animation: 400ms FadeIn 150ms forwards;
+        }
+
+        @keyframes FadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+
+        .LoadingShell {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 100000;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+            will-change: opacity;
+
+            min-height: 100dvh;
+            display: grid;
+            grid-template-rows: auto auto 1fr;
+            grid-template-areas:
+                'header'
+                'disclosure'
+                'shell-content';
+            background-color: var(--x-skeleton-default-color-background);
+            background-image: var(--x-skeleton-shell-background-image);
+
+            --x-skeleton-shell-inline-size: 57rem;
+            --x-skeleton-shell-background-image: var(--skeleton-config-shell-background-image);
+
+            --x-skeleton-shell-header-inline-size: var(--x-skeleton-shell-inline-size);
+            --x-skeleton-shell-header-padding: var(--x-skeleton-spacing-large-200);
+            --x-skeleton-shell-header-background-image: var(--skeleton-config-header-background-image);
+
+            --x-skeleton-shell-disclosure-inline-size: var(--x-skeleton-shell-inline-size);
+            --x-skeleton-shell-disclosure-padding: var(--x-skeleton-spacing-large-100) var(--x-skeleton-spacing-large-200);
+            --x-skeleton-shell-disclosure-display: block;
+
+            --x-skeleton-shell-main-inline-size: var(--x-skeleton-shell-inline-size);
+            --x-skeleton-shell-main-justify-content: center;
+            --x-skeleton-shell-main-padding: var(--x-skeleton-spacing-large-200);
+            --x-skeleton-shell-main-border: none;
+
+            --x-skeleton-shell-order-summary-display: none;
+            --x-skeleton-shell-order-summary-background-image: var(--skeleton-config-order-summary-background-image);
+
+            @media screen and (min-width: 1000px) {
+                --x-skeleton-shell-main-inline-size: 66rem;
+                --x-skeleton-shell-order-summary-inline-size: 52rem;
+                --x-skeleton-shell-section-columns-offset: 7rem;
+
+                --x-skeleton-shell-content-display: grid;
+                --x-skeleton-shell-content-template-areas: 'main order-summary';
+
+                --x-skeleton-shell-content-template-columns: minmax(min-content, calc(50% + var(--x-skeleton-shell-section-columns-offset))) 1fr;
+
+                --x-skeleton-shell-inline-size: 118rem;
+                --x-skeleton-shell-header-padding: 0;
+
+                --x-skeleton-shell-disclosure-display: none;
+
+                --x-skeleton-shell-main-justify-content: end;
+                --x-skeleton-shell-main-padding: var(--x-skeleton-spacing-large-500);
+                --x-skeleton-shell-main-border: 1px solid var(--x-skeleton-default-color-border);
+
+                --x-skeleton-shell-order-summary-display: block;
+                --x-skeleton-shell-order-summary-padding: var(--x-skeleton-spacing-large-500);
+            }
+        }
+
+        @media screen and (min-width: 1000px) {
+            .LoadingShell.LoadingShellConfig-Header-positionStart {
+                --x-skeleton-shell-header-padding: calc(var(--x-skeleton-spacing-large-500) * 2) var(--x-skeleton-spacing-large-500) var(--x-skeleton-spacing-large-500);
+            }
+
+            .LoadingShell.LoadingShellConfig-Header-positionStart.LoadingShell-variantOneStepCheckout {
+                --x-skeleton-shell-header-padding: var(--x-skeleton-spacing-large-200) var(--x-skeleton-spacing-large-500);
+            }
+        }
+
+        .LoadingShellHeader {
+            grid-area: header;
+            background-color: var(--x-skeleton-default-color-background);
+            color: var(--x-skeleton-default-color-text);
+        }
+
+        .LoadingShellHeader-colorSchemeInherit {
+            background-color: transparent;
+            color: inherit;
+        }
+
+        .LoadingShellHeaderContent {
+            padding: var(--x-skeleton-shell-header-padding);
+            width: 100%;
+            max-width: var(--x-skeleton-shell-header-inline-size);
+        }
+
+        @media screen and (min-width: 1000px) {
+            .LoadingShell:not(.LoadingShellConfig-Header-positionStart) .LoadingShellHeader-positionStart {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 999px) {
+
+            .LoadingShellConfig-Header-positionInline .LoadingShellHeader-positionInline,
+            .LoadingShellConfig-Header-positionInlineSecondary .LoadingShellHeader-positionInlineSecondary {
+                display: none;
+            }
+
+            .LoadingShellConfig-Header-positionInlineSecondary .LoadingShellHeader-positionStart {
+                background-image: var(--x-skeleton-shell-header-background-image,
+                        var(--x-skeleton-shell-order-summary-background-image));
+            }
+        }
+
+        .LoadingShellHeader-positionStart {
+            display: flex;
+            justify-content: center;
+            border-bottom: 1px solid var(--x-skeleton-default-color-border);
+            background-image: var(--x-skeleton-shell-header-background-image);
+            background-position: 50% 50%;
+            background-size: cover;
+        }
+
+        .LoadingShellHeader-positionStart.LoadingShellHeader-hasBackgroundImage {
+            --header-shop-name-color: #ffffff;
+        }
+
+        .LoadingShellBuyerJourneyContent {
+            width: 100%;
+            width: var(--x-skeleton-shell-buyer-journey-inline-size);
+            padding: var(--x-skeleton-shell-buyer-journey-padding);
+        }
+
+        .LoadingShellDisclosure {
+            grid-area: disclosure;
+            background-color: var(--x-skeleton-color-schemes-scheme1-base-backgroundSubdued);
+            display: var(--x-skeleton-shell-disclosure-display);
+            border-bottom: 1px solid var(--x-skeleton-default-color-border);
+        }
+
+        .LoadingShellDisclosureButton {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .LoadingShellDisclosureButton {
+            text-align: start;
+            background: var(--x-skeleton-default-color-background-subdued);
+            color: var(--x-skeleton-default-color-accent);
+            position: relative;
+            z-index: 2;
+        }
+
+        .LoadingShellConfig-Shell-hasBackgroundImage .LoadingShellDisclosureButton {
+            background: transparent;
+            color: inherit;
+        }
+
+        .LoadingShellDisclosureButtonContent {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: var(--x-skeleton-spacing-small-200);
+            align-content: center;
+            align-items: center;
+        }
+
+        .LoadingShellDisclosureButtonContent {
+            padding: var(--x-skeleton-shell-disclosure-padding);
+            width: 100%;
+            max-width: var(--x-skeleton-shell-disclosure-inline-size);
+        }
+
+        .LoadingShellContent {
+            grid-area: shell-content;
+            display: var(--x-skeleton-shell-content-display);
+            grid-template-areas: var(--x-skeleton-shell-content-template-areas);
+            grid-template-columns: var(--x-skeleton-shell-content-template-columns);
+        }
+
+        .LoadingShellMain {
+            background-color: var(--x-skeleton-default-color-background);
+            color: var(--x-skeleton-default-color-text);
+            grid-area: main;
+            display: flex;
+            justify-content: var(--x-skeleton-shell-main-justify-content);
+            height: 100%;
+        }
+
+        .LoadingShellMain .LoadingShellMainContent {
+            height: 100%;
+            width: 100%;
+            max-width: var(--x-skeleton-shell-main-inline-size);
+            padding: var(--x-skeleton-shell-main-padding);
+            border-right: var(--x-skeleton-shell-main-border);
+
+            display: grid;
+            grid-template-rows: auto auto 1fr;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                'header'
+                'buyer-journey'
+                'main-content-primary';
+        }
+
+        .LoadingShellMainContentPrimary {
+            grid-area: main-content-primary;
+        }
+
+        .LoadingShellMain-colorSchemeInherit {
+            background-color: transparent;
+            color: inherit;
+        }
+
+        .LoadingShellMainContent .LoadingShellHeader {
+            margin-bottom: var(--x-skeleton-spacing-large-100);
+        }
+
+        .LoadingShellMainContent .LoadingShellBuyerJourney {
+            margin-bottom: var(--x-skeleton-spacing-large-300);
+        }
+
+        .LoadingShell-variantOneStepCheckout .LoadingShellMainContent .LoadingShellHeader {
+            margin-bottom: calc(var(--x-skeleton-spacing-large-300) * 2);
+        }
+
+        .LoadingShellOrderSummary {
+            background-color: var(--x-skeleton-default-color-background);
+            color: var(--x-skeleton-default-color-text);
+            display: var(--x-skeleton-shell-order-summary-display);
+            grid-area: order-summary;
+        }
+
+        .LoadingShellOrderSummary .LoadingShellOrderSummaryContent {
+            position: sticky;
+            padding: var(--x-skeleton-shell-order-summary-padding);
+            width: 100%;
+            max-width: var(--x-skeleton-shell-order-summary-inline-size);
+            top: 0;
+            right: auto;
+            bottom: 0;
+            left: auto;
+        }
+
+        .LoadingShellOrderSummary-colorSchemeInherit {
+            background-color: transparent;
+            color: inherit;
+        }
+
+        .LoadingShellOrderSummaryContent .LoadingShellHeader {
+            margin-bottom: var(--x-skeleton-spacing-large-500);
+        }
+
+        /* ThreeStep Header */
+        .LoadingShell-variantThreeStepCheckout .LoadingHeader {
+            display: flex;
+            justify-items: start;
+            justify-content: flex-start;
+            width: 100%;
+        }
+
+        .LoadingShell-variantThreeStepCheckout .LoadingHeader-alignmentCenter {
+            justify-items: center;
+            justify-content: center;
+        }
+
+        .LoadingShell-variantThreeStepCheckout .LoadingHeader-alignmentEnd {
+            justify-items: end;
+            justify-content: flex-end;
+        }
+
+        /* OneStep Header */
+        .LoadingShell-variantOneStepCheckout .LoadingHeader {
+            display: grid;
+            grid-auto-flow: row;
+            grid-template-rows: minmax(0, 1fr);
+            grid-auto-rows: minmax(0, 1fr);
+            grid-template-columns: minmax(0, 1fr) minmax(auto, max-content);
+            grid-auto-columns: 1fr;
+            column-gap: var(--x-skeleton-spacing-large-500);
+            row-gap: var(--x-skeleton-spacing-large-500);
+            align-items: center;
+            align-content: center;
+        }
+
+        .LoadingShell-variantOneStepCheckout .LoadingHeader-alignmentCenter {
+            grid-template-columns: minmax(auto, max-content) minmax(0, 1fr) minmax(auto, max-content);
+        }
+
+        .LoadingShell-variantOneStepCheckout .LoadingHeader-alignmentCenter .CartIcon:last-child {
+            visibility: hidden;
+        }
+
+        .LoadingShell-variantOneStepCheckout .LoadingHeader-alignmentEnd {
+            grid-template-columns: minmax(auto, max-content) minmax(0, 1fr);
+        }
+
+        .LoadingShell-variantOneStepCheckout .LoadingHeader-alignmentCenter .LoadingHeaderHeading {
+            display: flex;
+            justify-content: center;
+        }
+
+        .LoadingShell-variantOneStepCheckout .LoadingHeader-alignmentEnd .LoadingHeaderHeading {
+            display: flex;
+            justify-content: end;
+        }
+    </style>
+    <div style="--skeleton-config-header-background-image:url(&quot;https://cdn.shopify.com/s/files/1/0676/1273/7846/files/DSC_4019_1_2000x.jpg?v=1683625245&quot;);"
+        class="LoadingShell LoadingShellConfig-Header-positionStart LoadingShell-variantOneStepCheckout">
+        <header role="banner"
+            class="LoadingShellHeader LoadingShellHeader-containerFill LoadingShellHeader-positionStart LoadingShellHeader-hasBackgroundImage">
+            <div class="LoadingShellHeaderContent">
+                <div class="LoadingHeader LoadingHeader-alignmentEnd">
+                    <div class="CartIcon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"
+                            class="CartIcon__svg">
+                            <path
+                                d="M2.675 10.037 3.072 4.2h7.856l.397 5.837A2.4 2.4 0 0 1 8.931 12.6H5.069a2.4 2.4 0 0 1-2.394-2.563Z">
+                            </path>
+                            <path d="M4.9 3.5a2.1 2.1 0 1 1 4.2 0v1.4a2.1 2.1 0 0 1-4.2 0V3.5Z"></path>
+                        </svg></div>
+                    <h1 class="LoadingHeaderHeading"><img alt="Amkette"
+                            src="https://cdn.shopify.com/s/files/1/0676/1273/7846/files/Comp_2_2-min_x320.gif?v=1681466926"
+                            height="79.86501687289089" width="142" class="LoadingHeaderImage" /></h1>
+                </div>
+            </div>
+        </header>
+        <div class="LoadingShellDisclosure">
+            <div class="LoadingShellDisclosureButton LoadingShellDisclosureButton-containerFill"><span
+                    class="LoadingShellDisclosureButtonContent FadeIn"><span class="Text Text--size-small"><span
+                            class="SkeletonText"><span
+                                class="SkeletonTextInner SkeletonTextInner--inline-size-base"><span></span></span></span></span><span><span
+                            class="Text Text--size-large"><span class="SkeletonText"><span
+                                    class="SkeletonTextInner SkeletonTextInner--inline-size-small"><span></span></span></span></span></span></span>
+            </div>
+        </div>
+        <div class="LoadingShellContent LoadingShellContent-containerFill">
+            <div class="LoadingShellMain">
+                <div class="LoadingShellMainContent">
+                    <main class="LoadingShellMainContentPrimary FadeIn">
+                        <div class="SkeletonExpressCheckout">
+                            <div class="BlockStack BlockStack--spacing-base">
+                                <div class="BlockStack BlockStack--inline-alignment-center BlockStack--spacing-base">
+                                    <span class="Text"><span class="SkeletonText"><span
+                                                class="SkeletonTextInner SkeletonTextInner--inline-size-base"><span></span></span></span></span>
+                                </div>
+                                <div class="SkeletonExpressCheckoutButtons">
+                                    <div class="SkeletonButton">
+                                        <div class="SkeletonButtonInner"></div>
+                                    </div>
+                                    <div class="SkeletonButton">
+                                        <div class="SkeletonButtonInner"></div>
+                                    </div>
+                                    <div class="SkeletonButton">
+                                        <div class="SkeletonButtonInner"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ExpressCheckoutDivider">
+                                <div class="Divider"></div>
+                            </div>
+                        </div>
+                        <div class="BlockStack BlockStack--spacing-large200">
+                            <div class="BlockStack BlockStack--spacing-base"><span class="Text Text--size-large"><span
+                                        class="SkeletonText"><span
+                                            class="SkeletonTextInner SkeletonTextInner--inline-size-small"><span></span></span></span></span>
+                                <div class="BlockStack BlockStack--spacing-small300"><span
+                                        class="Text Text--size-small"><span class="SkeletonText"><span
+                                                class="SkeletonTextInner SkeletonTextInner--inline-size-full"><span></span></span></span></span><span
+                                        class="Text Text--size-small"><span class="SkeletonText"><span
+                                                class="SkeletonTextInner SkeletonTextInner--inline-size-full"><span></span></span></span></span>
+                                </div>
+                            </div>
+                            <div class="Divider"></div>
+                            <div class="BlockStack BlockStack--spacing-base"><span class="Text Text--size-large"><span
+                                        class="SkeletonText"><span
+                                            class="SkeletonTextInner SkeletonTextInner--inline-size-small"><span></span></span></span></span>
+                                <div class="BlockStack BlockStack--spacing-small300"><span
+                                        class="Text Text--size-small"><span class="SkeletonText"><span
+                                                class="SkeletonTextInner SkeletonTextInner--inline-size-full"><span></span></span></span></span><span
+                                        class="Text Text--size-small"><span class="SkeletonText"><span
+                                                class="SkeletonTextInner SkeletonTextInner--inline-size-full"><span></span></span></span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+            <div class="LoadingShellOrderSummary ColorScheme2">
+                <div class="LoadingShellOrderSummaryContent">
+                    <aside class="LoadingShellOrderSummaryContentPrimary FadeIn">
+                        <div class="BlockStack BlockStack--spacing-large200">
+                            <h2 class="VisuallyHidden"></h2>
+                            <div class="LoadingShellLineItems">
+                                <div aria-hidden="true" class="LoadingShellLine">
+                                    <div class="LoadingShellLineImageWrapper"><img
+                                            src="https://cdn.shopify.com/s/files/1/0676/1273/7846/products/Lexus-Neo-Wired-Keyboard-Hero.png?v=1677497594"
+                                            alt="Lexus+Neo+Wired+Keyboard"
+                                            class="LoadingShellLineImage LoadingShellLineImage--corner-radius-base LoadingShellLineImage--border-full" /><span
+                                            aria-hidden="true" class="LoadingShellLineQuantity">1</span></div>
+                                    <div class="LoadingShellLineContent"><span class="Text">Lexus Neo Wired
+                                            Keyboard</span></div>
+                                    <div class="VisuallyHidden">1<span aria-hidden="true"> x</span></div>
+                                    <div class="LoadingShellLinePrice"><span class="Text Text--size-small"><span
+                                                class="SkeletonText"><span
+                                                    class="SkeletonTextInner SkeletonTextInner--inline-size-small"><span></span></span></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="BlockStack BlockStack--spacing-small100">
+                                <div
+                                    class="InlineStack InlineStack--spacing-base InlineStack--block-alignment-start InlineStack--inline-alignment-spaceBetween">
+                                    <span class="Text Text--size-small"><span class="SkeletonText"><span
+                                                class="SkeletonTextInner SkeletonTextInner--inline-size-small"><span></span></span></span></span><span
+                                        class="Text Text--size-small"><span class="SkeletonText"><span
+                                                class="SkeletonTextInner SkeletonTextInner--inline-size-small"><span></span></span></span></span>
+                                </div>
+                                <div
+                                    class="InlineStack InlineStack--spacing-base InlineStack--block-alignment-start InlineStack--inline-alignment-spaceBetween">
+                                    <span class="Text Text--size-small"><span class="SkeletonText"><span
+                                                class="SkeletonTextInner SkeletonTextInner--inline-size-small"><span></span></span></span></span><span
+                                        class="Text Text--size-small"><span class="SkeletonText"><span
+                                                class="SkeletonTextInner SkeletonTextInner--inline-size-small"><span></span></span></span></span>
+                                </div>
+                                <div
+                                    class="InlineStack InlineStack--spacing-base InlineStack--block-alignment-start InlineStack--inline-alignment-spaceBetween">
+                                    <span class="Text Text--size-small"><span class="SkeletonText"><span
+                                                class="SkeletonTextInner SkeletonTextInner--inline-size-small"><span></span></span></span></span><span
+                                        class="Text Text--size-small"><span class="SkeletonText"><span
+                                                class="SkeletonTextInner SkeletonTextInner--inline-size-small"><span></span></span></span></span>
+                                </div>
+                                <div
+                                    class="InlineStack InlineStack--spacing-base InlineStack--block-alignment-start InlineStack--inline-alignment-spaceBetween">
+                                    <span class="Text Text--size-large"><span class="SkeletonText"><span
+                                                class="SkeletonTextInner SkeletonTextInner--inline-size-small"><span></span></span></span></span><span
+                                        class="Text Text--size-large"><span class="SkeletonText"><span
+                                                class="SkeletonTextInner SkeletonTextInner--inline-size-small"><span></span></span></span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/runtime.latest.en.f39849288ca954baed63.js"
+        defer crossorigin></script>
+    <script src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/707.latest.en.6e54bf5236628e3e233a.js" defer
+        crossorigin></script>
+    <script src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/807.latest.en.1f38cac7b4361d75ed7d.js" defer
+        crossorigin></script>
+    <script src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/681.latest.en.85631926c108f2d789ae.js" defer
+        crossorigin></script>
+    <script src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/app.latest.en.bcd31838d82eba5948c5.js" defer
+        crossorigin></script>
+    <script src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/751.latest.en.08105131cffb5e5f123d.js" defer
+        crossorigin></script>
+    <script src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/836.latest.en.5aceb700a87f544d09b8.js" defer
+        crossorigin></script>
+    <script src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/78.latest.en.7930eb638be8fdd8b4fe.js" defer
+        crossorigin></script>
+    <script src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/100.latest.en.ce6eac4958bd25e9d6a6.js" defer
+        crossorigin></script>
+    <script src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/OnePage.latest.en.b863172ab9c4ed740c77.js"
+        defer crossorigin></script>
+    <link rel="stylesheet"
+        href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/707.latest.en.c7fc5dcb4acd58663548.css"
+        crossorigin />
+    <link rel="stylesheet"
+        href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/app.latest.en.5e52d9ec000e6dcd2cd6.css"
+        crossorigin />
+    <link rel="stylesheet"
+        href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/836.latest.en.6c87ea912612934ca7eb.css"
+        crossorigin />
+    <link rel="stylesheet"
+        href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/268.latest.en.053493340aa2aed97656.css"
+        crossorigin />
+    <script>document.cookie = 'queue_token=' + "Aoj-Jv-3aDM6NSCfQmdAnGuBCGEObScU_CTElSYgOudaA9tyWbQEXdkgAtBTeRvYCQs6ua1DiD9RYu5p2QCwhTF3qW_63XVYTtDzT0Qh3HAyA6wHuG9j0-7i9BpT8zgrfEMA9lQ6247JGR-JqsZibXlgKqyhCW4X1KmPHQFFeEFMzV_hMgl7ApI8_VRVWvS9a4Dd" + '; path=/; max-age=3300';</script>
+    <meta name="serialized-session-token"
+        content="&quot;QXhiQWErNzRyZzJDQlVaRlB5cEo2TGNvSnpid01iTmtLTVB5dE5zVzVueFlCSm1BNS82MDlTOU5kb2M3VTZPK2FXTmJuTGluaHdMVjY4YzdQd2Q0YThQMWN4dUhKVE1sRVhUVWJxQ2hLbjVNWTBrbVgyS1pPNVB5eERiN3BkcG1WUWFGWVBiSWVZcnBPcGlLbmFNM2VqRUJjMjBlZ3pSVDh4RHhDdU1CN2dGZmVhK3hQRWlxdmRvbkFsTGs4b1d6QjFkcGZGRXBDQjBVVUdtNngwazl2UUlhU053b3NpUm1pdkFSN2N4cWtteWo5UThuL0IwV3A5TkxJTU9vLy9ZNldhUmQtLXdsUmszTytqdnZJRzdDRGYtLW9VeWFLaGhSZmxuNERrL3IwZjJ1UUE9PQ&quot;" />
+    <meta name="serialized-source-token" content="&quot;c1-75ad9c8ddc1ddae48c84c6f1b62b97d7&quot;" />
+    <meta name="serialized-checkout-session-identifier" content="&quot;3e029778561cac36939481831ff5a100&quot;" />
+    <meta name="serialized-queue-token"
+        content="&quot;ArhwEm1budVvZlJ3-DaDg0SAZWFFtFVA6-SunzjBo_34XzhchC1u2evI8ozH86dMScvPC7BVmD5pjYFyI_f619qE0yM3uRj4uD7Svj9vm84u92jGvLPyKKRbVBmf5wdR9Y5fqm3t7JVZ4zRDYS9SJR4OSX4NHDSAeZ9oRtIQf208cXkakFJbV7g2EfVT5eTsx_10&quot;" />
+    <meta name="serialized-graphql"
+        content="{&quot;dcf8d08dd3b2d82083d54253d2b2c1006fba63d9aa068a64d255f9f4dadddb8b{}&quot;:{&quot;shop&quot;:{&quot;id&quot;:&quot;gid://shopify/Shop/67612737846&quot;,&quot;designSystem&quot;:{&quot;colors&quot;:{&quot;global&quot;:{&quot;brand&quot;:&quot;hsl(26.085, 98.076%, 60.235%)&quot;,&quot;accent&quot;:&quot;hsl(26.085, 98.076%, 60.235%)&quot;,&quot;decorative&quot;:null,&quot;success&quot;:null,&quot;warning&quot;:null,&quot;critical&quot;:null,&quot;info&quot;:null,&quot;__typename&quot;:&quot;ColorGlobal&quot;},&quot;schemes&quot;:{&quot;scheme1&quot;:{&quot;base&quot;:{&quot;background&quot;:&quot;hsl(0.0, 0.0%, 100.0%)&quot;,&quot;text&quot;:null,&quot;border&quot;:null,&quot;icon&quot;:null,&quot;accent&quot;:&quot;hsl(26.085, 98.076%, 60.235%)&quot;,&quot;decorative&quot;:null,&quot;__typename&quot;:&quot;ColorRoles&quot;},&quot;control&quot;:null,&quot;primaryButton&quot;:null,&quot;secondaryButton&quot;:null,&quot;__typename&quot;:&quot;ColorScheme&quot;},&quot;scheme2&quot;:{&quot;base&quot;:{&quot;background&quot;:&quot;hsl(0.0, 0.0%, 100.0%)&quot;,&quot;text&quot;:null,&quot;border&quot;:null,&quot;icon&quot;:null,&quot;accent&quot;:&quot;hsl(26.085, 98.076%, 60.235%)&quot;,&quot;decorative&quot;:null,&quot;__typename&quot;:&quot;ColorRoles&quot;},&quot;control&quot;:null,&quot;primaryButton&quot;:null,&quot;secondaryButton&quot;:null,&quot;__typename&quot;:&quot;ColorScheme&quot;},&quot;__typename&quot;:&quot;ColorSchemes&quot;},&quot;__typename&quot;:&quot;Colors&quot;},&quot;typography&quot;:{&quot;size&quot;:null,&quot;primary&quot;:null,&quot;secondary&quot;:{&quot;name&quot;:&quot;Lato&quot;,&quot;loadingStrategy&quot;:null,&quot;base&quot;:{&quot;weight&quot;:400,&quot;sources&quot;:&quot;local('Lato Regular'), local('Lato-Regular'), url(https://fonts.shopifycdn.com/lato/lato_n4.c86cddcf8b15d564761aaa71b6201ea326f3648b.woff2?valid_until=MTcxMDE0Njk2NA&amp;hmac=23c5bafde4355a5b264c38704d5136de264df6b54a5f54544166477f3deb4900) format('woff2'),url(https://fonts.shopifycdn.com/lato/lato_n4.e0ee1e2c008a0f429542630edf70be01045ac5e9.woff?valid_until=MTcxMDE0Njk2NA&amp;hmac=20e5ee6f2efb95a63faa72387c5a302ab9e0ff3a25c1fe07a5721bc5879fdcb1) format('woff')&quot;,&quot;preloadUrl&quot;:&quot;https://fonts.shopifycdn.com/lato/lato_n4.c86cddcf8b15d564761aaa71b6201ea326f3648b.woff2?valid_until=MTcxMDE0Njk2NA&amp;hmac=23c5bafde4355a5b264c38704d5136de264df6b54a5f54544166477f3deb4900&quot;,&quot;style&quot;:&quot;normal&quot;,&quot;__typename&quot;:&quot;Font&quot;},&quot;bold&quot;:{&quot;weight&quot;:700,&quot;sources&quot;:&quot;local('Lato Bold'), local('Lato-Bold'), url(https://fonts.shopifycdn.com/lato/lato_n7.f0037142450bd729bdf6ba826f5fdcd80f2787ba.woff2?valid_until=MTcxMDE0Njk2NA&amp;hmac=00859f363959fb2092c5b7966a84fe3cbb5e5b4b62231f6f731ea5c415a32487) format('woff2'),url(https://fonts.shopifycdn.com/lato/lato_n7.50161a3d4f05d049b7407d86c5a8834e4d6e29bf.woff?valid_until=MTcxMDE0Njk2NA&amp;hmac=a66b854344e65b1eb7fd2f8829900acecfdec7c58b50232243d8865b51c73303) format('woff')&quot;,&quot;preloadUrl&quot;:&quot;https://fonts.shopifycdn.com/lato/lato_n7.f0037142450bd729bdf6ba826f5fdcd80f2787ba.woff2?valid_until=MTcxMDE0Njk2NA&amp;hmac=00859f363959fb2092c5b7966a84fe3cbb5e5b4b62231f6f731ea5c415a32487&quot;,&quot;style&quot;:&quot;normal&quot;,&quot;__typename&quot;:&quot;Font&quot;},&quot;__typename&quot;:&quot;FontGroup&quot;},&quot;__typename&quot;:&quot;Typography&quot;},&quot;cornerRadius&quot;:null,&quot;__typename&quot;:&quot;DesignSystem&quot;},&quot;customizations&quot;:{&quot;global&quot;:null,&quot;favicon&quot;:null,&quot;main&quot;:null,&quot;expressCheckout&quot;:null,&quot;orderSummary&quot;:null,&quot;header&quot;:{&quot;alignment&quot;:&quot;END&quot;,&quot;position&quot;:&quot;START&quot;,&quot;blockPadding&quot;:null,&quot;background&quot;:null,&quot;colorScheme&quot;:null,&quot;cornerRadius&quot;:null,&quot;border&quot;:null,&quot;borderStyle&quot;:null,&quot;borderWidth&quot;:null,&quot;padding&quot;:null,&quot;shadow&quot;:null,&quot;divided&quot;:null,&quot;logo&quot;:{&quot;image&quot;:{&quot;main&quot;:&quot;https://cdn.shopify.com/s/files/1/0676/1273/7846/files/Comp_2_2-min_x320.gif?v=1681466926&quot;,&quot;height&quot;:1080,&quot;width&quot;:1920,&quot;altText&quot;:&quot;&quot;,&quot;__typename&quot;:&quot;Image&quot;},&quot;maxWidth&quot;:142,&quot;visibility&quot;:null,&quot;__typename&quot;:&quot;HeaderLogoCustomizations&quot;},&quot;banner&quot;:{&quot;image&quot;:{&quot;main&quot;:&quot;https://cdn.shopify.com/s/files/1/0676/1273/7846/files/DSC_4019_1_2000x.jpg?v=1683625245&quot;,&quot;__typename&quot;:&quot;Image&quot;},&quot;__typename&quot;:&quot;HeaderBannerCustomizations&quot;},&quot;__typename&quot;:&quot;HeaderCustomizations&quot;},&quot;footer&quot;:null,&quot;cartLink&quot;:null,&quot;buyerJourney&quot;:null,&quot;headingLevel1&quot;:null,&quot;headingLevel2&quot;:null,&quot;headingLevel3&quot;:null,&quot;control&quot;:null,&quot;label&quot;:null,&quot;select&quot;:null,&quot;textField&quot;:null,&quot;checkbox&quot;:null,&quot;choiceList&quot;:null,&quot;primaryButton&quot;:null,&quot;secondaryButton&quot;:null,&quot;merchandiseThumbnail&quot;:null,&quot;__typename&quot;:&quot;CheckoutCustomizations&quot;},&quot;__typename&quot;:&quot;CheckoutShopConfig&quot;}},&quot;5638616fb05cb50fa18d4cba4335a74898a1bfebfdc79a784e07dacd23898e17{}&quot;:{&quot;shop&quot;:{&quot;id&quot;:&quot;gid://shopify/Shop/67612737846&quot;,&quot;shippingCountries&quot;:[{&quot;value&quot;:&quot;IN&quot;,&quot;label&quot;:&quot;India&quot;,&quot;__typename&quot;:&quot;Country&quot;}],&quot;__typename&quot;:&quot;CheckoutShopConfig&quot;}},&quot;6b84ac7d44e3cccf9ad2cf18b4d4760279d7d10fb64573832138bb2d0be395eb{}&quot;:{&quot;shop&quot;:{&quot;hostedFieldsUrl&quot;:&quot;https://checkout.shopifycs.com/dist/card_fields.js&quot;,&quot;domain&quot;:&quot;www.amkette.com&quot;,&quot;name&quot;:&quot;Amkette&quot;,&quot;id&quot;:&quot;gid://shopify/Shop/67612737846&quot;,&quot;merchantPolicies&quot;:[{&quot;handle&quot;:&quot;refund-policy&quot;,&quot;url&quot;:&quot;https://www.amkette.com/67612737846/policies/refund-policy.html?locale=en-IN&quot;,&quot;__typename&quot;:&quot;MerchantPolicy&quot;},{&quot;handle&quot;:&quot;shipping-policy&quot;,&quot;url&quot;:&quot;https://www.amkette.com/67612737846/policies/shipping-policy.html?locale=en-IN&quot;,&quot;__typename&quot;:&quot;MerchantPolicy&quot;},{&quot;handle&quot;:&quot;privacy-policy&quot;,&quot;url&quot;:&quot;https://www.amkette.com/67612737846/policies/privacy-policy.html?locale=en-IN&quot;,&quot;__typename&quot;:&quot;MerchantPolicy&quot;},{&quot;handle&quot;:&quot;terms-of-service&quot;,&quot;url&quot;:&quot;https://www.amkette.com/67612737846/policies/terms-of-service.html?locale=en-IN&quot;,&quot;__typename&quot;:&quot;MerchantPolicy&quot;},{&quot;handle&quot;:&quot;contact-information&quot;,&quot;url&quot;:&quot;https://www.amkette.com/67612737846/policies/contact-information.html?locale=en-IN&quot;,&quot;__typename&quot;:&quot;MerchantPolicy&quot;}],&quot;country&quot;:{&quot;code&quot;:&quot;IN&quot;,&quot;name&quot;:&quot;India&quot;,&quot;localizationKeys&quot;:{&quot;address2&quot;:null,&quot;postalCode&quot;:&quot;pincode_label&quot;,&quot;zone&quot;:&quot;state_label&quot;,&quot;__typename&quot;:&quot;AddressLocalizationKeys&quot;},&quot;labels&quot;:{&quot;firstName&quot;:&quot;First name&quot;,&quot;lastName&quot;:&quot;Last name&quot;,&quot;company&quot;:&quot;Company&quot;,&quot;address1&quot;:&quot;Address&quot;,&quot;address2&quot;:&quot;Apartment, suite, etc.&quot;,&quot;city&quot;:&quot;City&quot;,&quot;country&quot;:&quot;Country/region&quot;,&quot;zone&quot;:&quot;State&quot;,&quot;postalCode&quot;:&quot;PIN code&quot;,&quot;phone&quot;:&quot;Phone&quot;,&quot;__typename&quot;:&quot;AddressLabels&quot;},&quot;zones&quot;:[{&quot;code&quot;:&quot;AN&quot;,&quot;name&quot;:&quot;Andaman and Nicobar Islands&quot;,&quot;nameWithAlternates&quot;:[&quot;Andaman and Nicobar Islands&quot;,&quot;Andaman and Nicobar&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;AP&quot;,&quot;name&quot;:&quot;Andhra Pradesh&quot;,&quot;nameWithAlternates&quot;:[&quot;Andhra Pradesh&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;AR&quot;,&quot;name&quot;:&quot;Arunachal Pradesh&quot;,&quot;nameWithAlternates&quot;:[&quot;Arunachal Pradesh&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;AS&quot;,&quot;name&quot;:&quot;Assam&quot;,&quot;nameWithAlternates&quot;:[&quot;Assam&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;BR&quot;,&quot;name&quot;:&quot;Bihar&quot;,&quot;nameWithAlternates&quot;:[&quot;Bihar&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;CH&quot;,&quot;name&quot;:&quot;Chandigarh&quot;,&quot;nameWithAlternates&quot;:[&quot;Chandigarh&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;CG&quot;,&quot;name&quot;:&quot;Chhattisgarh&quot;,&quot;nameWithAlternates&quot;:[&quot;Chhattisgarh&quot;,&quot;Chattisgarh&quot;,&quot;CT&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;DN&quot;,&quot;name&quot;:&quot;Dadra and Nagar Haveli&quot;,&quot;nameWithAlternates&quot;:[&quot;Dadra and Nagar Haveli&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;DD&quot;,&quot;name&quot;:&quot;Daman and Diu&quot;,&quot;nameWithAlternates&quot;:[&quot;Daman and Diu&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;DL&quot;,&quot;name&quot;:&quot;Delhi&quot;,&quot;nameWithAlternates&quot;:[&quot;Delhi&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;GA&quot;,&quot;name&quot;:&quot;Goa&quot;,&quot;nameWithAlternates&quot;:[&quot;Goa&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;GJ&quot;,&quot;name&quot;:&quot;Gujarat&quot;,&quot;nameWithAlternates&quot;:[&quot;Gujarat&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;HR&quot;,&quot;name&quot;:&quot;Haryana&quot;,&quot;nameWithAlternates&quot;:[&quot;Haryana&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;HP&quot;,&quot;name&quot;:&quot;Himachal Pradesh&quot;,&quot;nameWithAlternates&quot;:[&quot;Himachal Pradesh&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;JK&quot;,&quot;name&quot;:&quot;Jammu and Kashmir&quot;,&quot;nameWithAlternates&quot;:[&quot;Jammu and Kashmir&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;JH&quot;,&quot;name&quot;:&quot;Jharkhand&quot;,&quot;nameWithAlternates&quot;:[&quot;Jharkhand&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;KA&quot;,&quot;name&quot;:&quot;Karnataka&quot;,&quot;nameWithAlternates&quot;:[&quot;Karnataka&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;KL&quot;,&quot;name&quot;:&quot;Kerala&quot;,&quot;nameWithAlternates&quot;:[&quot;Kerala&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;LA&quot;,&quot;name&quot;:&quot;Ladakh&quot;,&quot;nameWithAlternates&quot;:[&quot;Ladakh&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;LD&quot;,&quot;name&quot;:&quot;Lakshadweep&quot;,&quot;nameWithAlternates&quot;:[&quot;Lakshadweep&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;MP&quot;,&quot;name&quot;:&quot;Madhya Pradesh&quot;,&quot;nameWithAlternates&quot;:[&quot;Madhya Pradesh&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;MH&quot;,&quot;name&quot;:&quot;Maharashtra&quot;,&quot;nameWithAlternates&quot;:[&quot;Maharashtra&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;MN&quot;,&quot;name&quot;:&quot;Manipur&quot;,&quot;nameWithAlternates&quot;:[&quot;Manipur&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;ML&quot;,&quot;name&quot;:&quot;Meghalaya&quot;,&quot;nameWithAlternates&quot;:[&quot;Meghalaya&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;MZ&quot;,&quot;name&quot;:&quot;Mizoram&quot;,&quot;nameWithAlternates&quot;:[&quot;Mizoram&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;NL&quot;,&quot;name&quot;:&quot;Nagaland&quot;,&quot;nameWithAlternates&quot;:[&quot;Nagaland&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;OR&quot;,&quot;name&quot;:&quot;Odisha&quot;,&quot;nameWithAlternates&quot;:[&quot;Odisha&quot;,&quot;OD&quot;,&quot;Orissa&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;PY&quot;,&quot;name&quot;:&quot;Puducherry&quot;,&quot;nameWithAlternates&quot;:[&quot;Puducherry&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;PB&quot;,&quot;name&quot;:&quot;Punjab&quot;,&quot;nameWithAlternates&quot;:[&quot;Punjab&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;RJ&quot;,&quot;name&quot;:&quot;Rajasthan&quot;,&quot;nameWithAlternates&quot;:[&quot;Rajasthan&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;SK&quot;,&quot;name&quot;:&quot;Sikkim&quot;,&quot;nameWithAlternates&quot;:[&quot;Sikkim&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;TN&quot;,&quot;name&quot;:&quot;Tamil Nadu&quot;,&quot;nameWithAlternates&quot;:[&quot;Tamil Nadu&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;TS&quot;,&quot;name&quot;:&quot;Telangana&quot;,&quot;nameWithAlternates&quot;:[&quot;Telangana&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;TR&quot;,&quot;name&quot;:&quot;Tripura&quot;,&quot;nameWithAlternates&quot;:[&quot;Tripura&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;UP&quot;,&quot;name&quot;:&quot;Uttar Pradesh&quot;,&quot;nameWithAlternates&quot;:[&quot;Uttar Pradesh&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;UK&quot;,&quot;name&quot;:&quot;Uttarakhand&quot;,&quot;nameWithAlternates&quot;:[&quot;Uttarakhand&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;WB&quot;,&quot;name&quot;:&quot;West Bengal&quot;,&quot;nameWithAlternates&quot;:[&quot;West Bengal&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;}],&quot;formatting&quot;:{&quot;edit&quot;:&quot;{country}_{firstName}{lastName}_{company}_{address1}_{address2}_{city}{province}{zip}_{phone}&quot;,&quot;show&quot;:&quot;{firstName} {lastName}_{company}_{address1}_{address2}_{zip} {city} {province}_{country}_{phone}&quot;,&quot;__typename&quot;:&quot;AddressFormat&quot;},&quot;autocompletionField&quot;:&quot;ADDRESS1&quot;,&quot;buildingNumberRequired&quot;:false,&quot;buildingNumberMayBeInAddress2&quot;:false,&quot;pureNumericPostalCode&quot;:true,&quot;postalCodeRequired&quot;:true,&quot;__typename&quot;:&quot;Country&quot;},&quot;popularBillingCountries&quot;:[{&quot;value&quot;:&quot;IN&quot;,&quot;label&quot;:&quot;India&quot;,&quot;__typename&quot;:&quot;Country&quot;}],&quot;popularShippingCountries&quot;:[],&quot;storefront&quot;:{&quot;url&quot;:&quot;https://www.amkette.com&quot;,&quot;hasStorefront&quot;:true,&quot;__typename&quot;:&quot;CheckoutStorefrontConfig&quot;},&quot;theme&quot;:{&quot;id&quot;:&quot;158571626806&quot;,&quot;cityhash&quot;:&quot;3215203330381835067&quot;,&quot;__typename&quot;:&quot;ThemeConfig&quot;},&quot;trackingPixels&quot;:[{&quot;pixelId&quot;:&quot;1325552471382696&quot;,&quot;pixelType&quot;:&quot;FACEBOOK&quot;,&quot;pixelConfig&quot;:null,&quot;__typename&quot;:&quot;TrackingPixel&quot;},{&quot;pixelId&quot;:&quot;G-QTDPTS5TW2&quot;,&quot;pixelType&quot;:&quot;GOOGLE_TAG_MANAGER&quot;,&quot;pixelConfig&quot;:{&quot;target_country&quot;:&quot;IN&quot;,&quot;gtag_events&quot;:[{&quot;type&quot;:&quot;begin_checkout&quot;,&quot;action_label&quot;:&quot;G-QTDPTS5TW2&quot;},{&quot;type&quot;:&quot;search&quot;,&quot;action_label&quot;:&quot;G-QTDPTS5TW2&quot;},{&quot;type&quot;:&quot;view_item&quot;,&quot;action_label&quot;:[&quot;G-QTDPTS5TW2&quot;,&quot;MC-R697L7Q2YW&quot;]},{&quot;type&quot;:&quot;purchase&quot;,&quot;action_label&quot;:[&quot;G-QTDPTS5TW2&quot;,&quot;MC-R697L7Q2YW&quot;]},{&quot;type&quot;:&quot;page_view&quot;,&quot;action_label&quot;:[&quot;G-QTDPTS5TW2&quot;,&quot;MC-R697L7Q2YW&quot;]},{&quot;type&quot;:&quot;add_payment_info&quot;,&quot;action_label&quot;:&quot;G-QTDPTS5TW2&quot;},{&quot;type&quot;:&quot;add_to_cart&quot;,&quot;action_label&quot;:&quot;G-QTDPTS5TW2&quot;}]},&quot;__typename&quot;:&quot;TrackingPixel&quot;}],&quot;onlineStoreChat&quot;:null,&quot;facebookAppPixelId&quot;:&quot;1325552471382696&quot;,&quot;facebookCapiEnabled&quot;:true,&quot;myshopifyDomain&quot;:&quot;amketteofficial.myshopify.com&quot;,&quot;translations&quot;:&quot;{}&quot;,&quot;analyticsAccount&quot;:&quot;&quot;,&quot;enhancedEcommerceEnabled&quot;:false,&quot;customerAccountRequirement&quot;:&quot;OPTIONAL&quot;,&quot;emailMarketing&quot;:&quot;CHECKED&quot;,&quot;smsMarketing&quot;:&quot;OFF&quot;,&quot;shippingRatesReloadStrategy&quot;:{&quot;IN&quot;:{&quot;AN&quot;:3,&quot;AP&quot;:3,&quot;AR&quot;:3,&quot;AS&quot;:3,&quot;BR&quot;:3,&quot;CH&quot;:3,&quot;CG&quot;:3,&quot;DN&quot;:3,&quot;DD&quot;:3,&quot;DL&quot;:3,&quot;GA&quot;:3,&quot;GJ&quot;:3,&quot;HR&quot;:3,&quot;HP&quot;:3,&quot;JK&quot;:3,&quot;JH&quot;:3,&quot;KA&quot;:3,&quot;KL&quot;:3,&quot;LA&quot;:3,&quot;LD&quot;:3,&quot;MP&quot;:3,&quot;MH&quot;:3,&quot;MN&quot;:3,&quot;ML&quot;:3,&quot;MZ&quot;:3,&quot;NL&quot;:3,&quot;OR&quot;:3,&quot;PY&quot;:3,&quot;PB&quot;:3,&quot;RJ&quot;:3,&quot;SK&quot;:3,&quot;TN&quot;:3,&quot;TS&quot;:3,&quot;TR&quot;:3,&quot;UP&quot;:3,&quot;UK&quot;:3,&quot;WB&quot;:3},&quot;*&quot;:3},&quot;billingAddressFormSettings&quot;:{&quot;address2&quot;:{&quot;mode&quot;:&quot;OPTIONAL&quot;,&quot;__typename&quot;:&quot;AddressFormField&quot;},&quot;company&quot;:{&quot;mode&quot;:&quot;OPTIONAL&quot;,&quot;__typename&quot;:&quot;AddressFormField&quot;},&quot;firstName&quot;:{&quot;mode&quot;:&quot;REQUIRED&quot;,&quot;__typename&quot;:&quot;AddressFormField&quot;},&quot;phone&quot;:{&quot;mode&quot;:&quot;OPTIONAL&quot;,&quot;__typename&quot;:&quot;AddressFormField&quot;},&quot;addressAutocompletion&quot;:true,&quot;__typename&quot;:&quot;BillingAddressFormSettings&quot;},&quot;shopConfigurations&quot;:{&quot;defaultConfiguration&quot;:{&quot;contactInfoOptions&quot;:[&quot;EMAIL&quot;],&quot;addressFormSettings&quot;:{&quot;address2&quot;:{&quot;mode&quot;:&quot;OPTIONAL&quot;,&quot;__typename&quot;:&quot;AddressFormField&quot;},&quot;company&quot;:{&quot;mode&quot;:&quot;OPTIONAL&quot;,&quot;__typename&quot;:&quot;AddressFormField&quot;},&quot;firstName&quot;:{&quot;mode&quot;:&quot;REQUIRED&quot;,&quot;__typename&quot;:&quot;AddressFormField&quot;},&quot;phone&quot;:{&quot;mode&quot;:&quot;REQUIRED&quot;,&quot;__typename&quot;:&quot;AddressFormField&quot;},&quot;addressAutocompletion&quot;:true,&quot;addressValidation&quot;:true,&quot;__typename&quot;:&quot;AddressFormSettings&quot;},&quot;__typename&quot;:&quot;CountryConfiguration&quot;},&quot;countrySpecificConfigurations&quot;:[{&quot;countries&quot;:[&quot;IN&quot;],&quot;configuration&quot;:{&quot;contactInfoOptions&quot;:[&quot;EMAIL&quot;],&quot;addressFormSettings&quot;:{&quot;address2&quot;:{&quot;mode&quot;:&quot;OPTIONAL&quot;,&quot;__typename&quot;:&quot;AddressFormField&quot;},&quot;company&quot;:{&quot;mode&quot;:&quot;OPTIONAL&quot;,&quot;__typename&quot;:&quot;AddressFormField&quot;},&quot;firstName&quot;:{&quot;mode&quot;:&quot;REQUIRED&quot;,&quot;__typename&quot;:&quot;AddressFormField&quot;},&quot;phone&quot;:{&quot;mode&quot;:&quot;REQUIRED&quot;,&quot;__typename&quot;:&quot;AddressFormField&quot;},&quot;addressAutocompletion&quot;:true,&quot;__typename&quot;:&quot;AddressFormSettings&quot;},&quot;__typename&quot;:&quot;CountryConfiguration&quot;},&quot;__typename&quot;:&quot;CountrySpecificConfiguration&quot;}],&quot;__typename&quot;:&quot;ShopConfigurations&quot;},&quot;currencyCode&quot;:&quot;INR&quot;,&quot;timeZone&quot;:&quot;Asia/Kolkata&quot;,&quot;b2bEnabled&quot;:false,&quot;enabledFlags&quot;:[&quot;03161c54&quot;,&quot;63f2af56&quot;,&quot;c6cae8f7&quot;,&quot;d7d6f508&quot;],&quot;enabledDeliveryMethods&quot;:[&quot;SHIPPING&quot;],&quot;giftCardsEnabled&quot;:false,&quot;discountCodesEnabled&quot;:true,&quot;contactEmail&quot;:&quot;do-not-reply@amkette.com&quot;,&quot;acceptTipPayments&quot;:false,&quot;showTipPayments&quot;:true,&quot;postPurchaseExtensionAvailable&quot;:false,&quot;postPurchaseDevelopmentModeAvailable&quot;:false,&quot;postPurchaseAdditionalTrackingScript&quot;:null,&quot;confirmationPageEnabled&quot;:false,&quot;hasAdditionalGoogleAnalyticsScript&quot;:false,&quot;customerAccountLocationsUrl&quot;:&quot;https://shopify.com/67612737846/account/locations&quot;,&quot;loginLinkVisible&quot;:true,&quot;customerSettingsEnabled&quot;:true,&quot;shopPayEnabled&quot;:false,&quot;storeVaultEnabled&quot;:false,&quot;storeVaultCvvVerificationAtGuestCheckoutEnabled&quot;:false,&quot;webPixelConfigurations&quot;:[{&quot;idTmp&quot;:&quot;51478838&quot;,&quot;configuration&quot;:&quot;{\&quot;accountID\&quot;:\&quot;G-QTDPTS5TW2\&quot;,\&quot;googleApiSecret\&quot;:\&quot;GKuJXgfiT86iHJB-tlkYUg\&quot;}&quot;,&quot;eventPayloadVersion&quot;:&quot;v1&quot;,&quot;runtimeContext&quot;:&quot;STRICT&quot;,&quot;scriptVersion&quot;:&quot;878ae3839e0ff64c83bddfcdd0c2f8c2&quot;,&quot;type&quot;:&quot;APP&quot;,&quot;apiClientId&quot;:&quot;4655316993&quot;,&quot;purposes&quot;:null,&quot;__typename&quot;:&quot;WebPixelConfiguration&quot;},{&quot;idTmp&quot;:&quot;55542070&quot;,&quot;configuration&quot;:null,&quot;eventPayloadVersion&quot;:&quot;1&quot;,&quot;runtimeContext&quot;:&quot;LAX&quot;,&quot;scriptVersion&quot;:&quot;2&quot;,&quot;type&quot;:&quot;CUSTOM&quot;,&quot;apiClientId&quot;:null,&quot;purposes&quot;:null,&quot;__typename&quot;:&quot;WebPixelConfiguration&quot;},{&quot;idTmp&quot;:&quot;shopify-app-pixel&quot;,&quot;configuration&quot;:&quot;{}&quot;,&quot;eventPayloadVersion&quot;:&quot;v1&quot;,&quot;runtimeContext&quot;:&quot;STRICT&quot;,&quot;scriptVersion&quot;:&quot;060&quot;,&quot;type&quot;:&quot;APP&quot;,&quot;apiClientId&quot;:&quot;shopify-pixel&quot;,&quot;purposes&quot;:null,&quot;__typename&quot;:&quot;WebPixelConfiguration&quot;},{&quot;idTmp&quot;:&quot;shopify-custom-pixel&quot;,&quot;configuration&quot;:null,&quot;eventPayloadVersion&quot;:&quot;v1&quot;,&quot;runtimeContext&quot;:&quot;LAX&quot;,&quot;scriptVersion&quot;:&quot;060&quot;,&quot;type&quot;:&quot;CUSTOM&quot;,&quot;apiClientId&quot;:&quot;shopify-pixel&quot;,&quot;purposes&quot;:null,&quot;__typename&quot;:&quot;WebPixelConfiguration&quot;}],&quot;webPixelManagerVersion&quot;:&quot;8ee545b5w42e19884p2fdfc8femcc7f178a&quot;,&quot;linkToArriveApp&quot;:false,&quot;sameBillingAndShippingAddress&quot;:true,&quot;requireMatchingShippingAndBilling&quot;:false,&quot;prefetchShippingRatesEnabled&quot;:true,&quot;captureAtFulfillmentEnabled&quot;:false,&quot;developmentShop&quot;:false,&quot;customerAccountDomain&quot;:&quot;shopify.com&quot;,&quot;checkoutPublicAccessToken&quot;:&quot;MDUyM2UwNzgyNWM2MDkxNzhkNjg1OTliNjE4NWZjN2M6\n&quot;,&quot;asyncDeliveryPromiseExperienceEnabled&quot;:false,&quot;paymentMethodAutoSelectionDisabled&quot;:false,&quot;__typename&quot;:&quot;CheckoutShopConfig&quot;},&quot;checkoutProfile&quot;:null,&quot;globalCheckoutUiExtensions&quot;:[],&quot;cardsinkUrl&quot;:&quot;https://deposit.us.shopifycs.com/sessions&quot;},&quot;1a9d7f054ba5d7bf8378c3756857d8bfc5d3bcea651a02b3e76f3fa66ad574b8{\&quot;checkpointData\&quot;:null,\&quot;queueToken\&quot;:\&quot;ArhwEm1budVvZlJ3-DaDg0SAZWFFtFVA6-SunzjBo_34XzhchC1u2evI8ozH86dMScvPC7BVmD5pjYFyI_f619qE0yM3uRj4uD7Svj9vm84u92jGvLPyKKRbVBmf5wdR9Y5fqm3t7JVZ4zRDYS9SJR4OSX4NHDSAeZ9oRtIQf208cXkakFJbV7g2EfVT5eTsx_10\&quot;}&quot;:{&quot;session&quot;:{&quot;context&quot;:{&quot;session&quot;:[],&quot;policies&quot;:{&quot;fees&quot;:[],&quot;payment&quot;:[],&quot;buyerIdentity&quot;:[],&quot;tax&quot;:[],&quot;discount&quot;:[],&quot;merchandise&quot;:[],&quot;tip&quot;:[],&quot;delivery&quot;:[],&quot;__typename&quot;:&quot;PolicyFactSet&quot;},&quot;__typename&quot;:&quot;NegotiationContext&quot;},&quot;sessionType&quot;:&quot;CART_API&quot;,&quot;sourceId&quot;:&quot;c1-75ad9c8ddc1ddae48c84c6f1b62b97d7&quot;,&quot;sourceVersion&quot;:null,&quot;checkoutSessionIdentifier&quot;:&quot;3e029778561cac36939481831ff5a100&quot;,&quot;storefrontAnalyticsStartedOrderEventId&quot;:null,&quot;cartReturnUrl&quot;:&quot;https://www.amkette.com/cart&quot;,&quot;headerLogoUrl&quot;:&quot;https://www.amkette.com&quot;,&quot;previewScript&quot;:null,&quot;negotiate&quot;:{&quot;result&quot;:{&quot;queueToken&quot;:&quot;Aoj-Jv-3aDM6NSCfQmdAnGuBCGEObScU_CTElSYgOudaA9tyWbQEXdkgAtBTeRvYCQs6ua1DiD9RYu5p2QCwhTF3qW_63XVYTtDzT0Qh3HAyA6wHuG9j0-7i9BpT8zgrfEMA9lQ6247JGR-JqsZibXlgKqyhCW4X1KmPHQFFeEFMzV_hMgl7ApI8_VRVWvS9a4Dd&quot;,&quot;buyerProposal&quot;:{&quot;merchandiseDiscount&quot;:{&quot;__typename&quot;:&quot;FilledDiscountTerms&quot;,&quot;acceptUnexpectedDiscounts&quot;:true,&quot;lines&quot;:[]},&quot;deliveryDiscount&quot;:{&quot;__typename&quot;:&quot;FilledDiscountTerms&quot;,&quot;acceptUnexpectedDiscounts&quot;:true,&quot;lines&quot;:[]},&quot;delivery&quot;:{&quot;__typename&quot;:&quot;FilledDeliveryTerms&quot;,&quot;intermediateRates&quot;:false,&quot;progressiveRatesEstimatedTimeUntilCompletion&quot;:0,&quot;shippingRatesStatusToken&quot;:&quot;&quot;,&quot;deliveryLines&quot;:[]},&quot;merchandise&quot;:{&quot;taxesIncluded&quot;:true,&quot;merchandiseLines&quot;:[{&quot;stableId&quot;:&quot;6182d3a7-4571-4ffb-b2e4-bf6a6287b3e9&quot;,&quot;merchandise&quot;:{&quot;__typename&quot;:&quot;ProductVariantMerchandise&quot;,&quot;id&quot;:&quot;gid://shopify/ProductVariantMerchandise/44593807950134&quot;,&quot;digest&quot;:&quot;b1bc225486e1e85a282a50ef3399fb51&quot;,&quot;variantId&quot;:&quot;gid://shopify/ProductVariant/44593807950134&quot;,&quot;title&quot;:&quot;Lexus Neo Wired Keyboard&quot;,&quot;untranslatedTitle&quot;:&quot;Lexus Neo Wired Keyboard&quot;,&quot;subtitle&quot;:null,&quot;untranslatedSubtitle&quot;:null,&quot;product&quot;:{&quot;id&quot;:&quot;gid://shopify/Product/8153892847926&quot;,&quot;vendor&quot;:&quot;Amkette&quot;,&quot;productType&quot;:&quot;&quot;,&quot;__typename&quot;:&quot;Product&quot;},&quot;productUrl&quot;:&quot;/products/lexus-neo-wired-keyboard&quot;,&quot;image&quot;:{&quot;altText&quot;:null,&quot;one&quot;:&quot;https://cdn.shopify.com/s/files/1/0676/1273/7846/products/Lexus-Neo-Wired-Keyboard-Hero_64x64.png?v=1677497594&quot;,&quot;two&quot;:&quot;https://cdn.shopify.com/s/files/1/0676/1273/7846/products/Lexus-Neo-Wired-Keyboard-Hero_128x128.png?v=1677497594&quot;,&quot;four&quot;:&quot;https://cdn.shopify.com/s/files/1/0676/1273/7846/products/Lexus-Neo-Wired-Keyboard-Hero_256x256.png?v=1677497594&quot;,&quot;__typename&quot;:&quot;Image&quot;},&quot;properties&quot;:[],&quot;requiresShipping&quot;:true,&quot;options&quot;:[{&quot;name&quot;:&quot;Title&quot;,&quot;value&quot;:&quot;Default Title&quot;,&quot;__typename&quot;:&quot;ProductVariantOption&quot;}],&quot;sellingPlan&quot;:null,&quot;giftCard&quot;:false},&quot;quantity&quot;:{&quot;items&quot;:{&quot;value&quot;:1,&quot;__typename&quot;:&quot;IntValueConstraint&quot;},&quot;__typename&quot;:&quot;ProposalMerchandiseQuantityByItem&quot;},&quot;totalAmount&quot;:{&quot;value&quot;:{&quot;amount&quot;:&quot;499.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;__typename&quot;:&quot;MoneyValueConstraint&quot;},&quot;recurringTotal&quot;:null,&quot;lineAllocations&quot;:[{&quot;stableId&quot;:&quot;298a6b8c1e083044adda50809faa8427&quot;,&quot;quantity&quot;:1,&quot;totalAmountBeforeReductions&quot;:{&quot;amount&quot;:&quot;499.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;totalAmountAfterDiscounts&quot;:{&quot;amount&quot;:&quot;499.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;totalAmountAfterLineDiscounts&quot;:{&quot;amount&quot;:&quot;499.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;checkoutPriceAfterDiscounts&quot;:{&quot;amount&quot;:&quot;499.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;checkoutPriceAfterLineDiscounts&quot;:{&quot;amount&quot;:&quot;499.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;checkoutPriceBeforeReductions&quot;:{&quot;amount&quot;:&quot;499.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;unitPrice&quot;:null,&quot;allocations&quot;:[],&quot;__typename&quot;:&quot;LineAllocation&quot;}],&quot;lineComponentsSource&quot;:null,&quot;lineComponents&quot;:[],&quot;__typename&quot;:&quot;MerchandiseLine&quot;}],&quot;__typename&quot;:&quot;FilledMerchandiseTerms&quot;},&quot;runningTotal&quot;:{&quot;value&quot;:{&quot;amount&quot;:&quot;499.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;__typename&quot;:&quot;MoneyValueConstraint&quot;},&quot;total&quot;:{&quot;__typename&quot;:&quot;AnyConstraint&quot;},&quot;checkoutTotalBeforeTaxesAndShipping&quot;:null,&quot;checkoutTotalTaxes&quot;:null,&quot;checkoutTotal&quot;:{&quot;__typename&quot;:&quot;AnyConstraint&quot;},&quot;deferredTotal&quot;:null,&quot;hasOnlyDeferredShipping&quot;:false,&quot;subtotalBeforeTaxesAndShipping&quot;:{&quot;value&quot;:{&quot;amount&quot;:&quot;499.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;__typename&quot;:&quot;MoneyValueConstraint&quot;},&quot;attribution&quot;:{&quot;attributions&quot;:[],&quot;__typename&quot;:&quot;Attribution&quot;},&quot;saleAttributions&quot;:{&quot;attributions&quot;:[],&quot;__typename&quot;:&quot;SaleAttributions&quot;},&quot;__typename&quot;:&quot;Proposal&quot;},&quot;sellerProposal&quot;:{&quot;merchandiseDiscount&quot;:{&quot;__typename&quot;:&quot;FilledDiscountTerms&quot;,&quot;acceptUnexpectedDiscounts&quot;:true,&quot;lines&quot;:[]},&quot;deliveryDiscount&quot;:{&quot;__typename&quot;:&quot;FilledDiscountTerms&quot;,&quot;acceptUnexpectedDiscounts&quot;:true,&quot;lines&quot;:[]},&quot;deliveryExpectations&quot;:{&quot;__typename&quot;:&quot;UnavailableTerms&quot;},&quot;availableRedeemables&quot;:{&quot;availableRedeemables&quot;:[],&quot;__typename&quot;:&quot;AvailableRedeemables&quot;},&quot;delivery&quot;:{&quot;__typename&quot;:&quot;UnavailableTerms&quot;},&quot;payment&quot;:{&quot;availablePayments&quot;:[{&quot;paymentMethod&quot;:{&quot;__typename&quot;:&quot;AnyOffsitePaymentMethod&quot;,&quot;availableOffsiteProviders&quot;:[{&quot;__typename&quot;:&quot;OffsiteProvider&quot;,&quot;paymentMethodIdentifier&quot;:&quot;32894cc0728104b4672b59917968196b&quot;,&quot;name&quot;:&quot;Cashfree Payment (UPI,Cards,Wallets,NetBanking)&quot;,&quot;paymentBrands&quot;:[&quot;upi&quot;,&quot;visa&quot;,&quot;master&quot;,&quot;rupay&quot;,&quot;paytm&quot;,&quot;american_express&quot;,&quot;amazon&quot;,&quot;airtel_money&quot;,&quot;freecharge&quot;,&quot;ola_money&quot;,&quot;mobikwik&quot;],&quot;orderingIndex&quot;:1,&quot;showRedirectionNotice&quot;:true,&quot;availablePresentmentCurrencies&quot;:[&quot;INR&quot;]}]},&quot;__typename&quot;:&quot;PaymentLine&quot;}],&quot;paymentLines&quot;:[],&quot;billingAddress&quot;:null,&quot;paymentFlexibilityPaymentTermsTemplate&quot;:null,&quot;__typename&quot;:&quot;FilledPaymentTerms&quot;},&quot;poNumber&quot;:null,&quot;merchandise&quot;:{&quot;taxesIncluded&quot;:true,&quot;merchandiseLines&quot;:[{&quot;stableId&quot;:&quot;6182d3a7-4571-4ffb-b2e4-bf6a6287b3e9&quot;,&quot;merchandise&quot;:{&quot;__typename&quot;:&quot;ContextualizedProductVariantMerchandise&quot;,&quot;id&quot;:&quot;gid://shopify/ProductVariantMerchandise/44593807950134&quot;,&quot;digest&quot;:&quot;b1bc225486e1e85a282a50ef3399fb51&quot;,&quot;variantId&quot;:&quot;gid://shopify/ProductVariant/44593807950134&quot;,&quot;title&quot;:&quot;Lexus Neo Wired Keyboard&quot;,&quot;untranslatedTitle&quot;:&quot;Lexus Neo Wired Keyboard&quot;,&quot;subtitle&quot;:null,&quot;untranslatedSubtitle&quot;:null,&quot;sku&quot;:&quot;860BK&quot;,&quot;price&quot;:{&quot;amount&quot;:&quot;499.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;product&quot;:{&quot;id&quot;:&quot;gid://shopify/Product/8153892847926&quot;,&quot;vendor&quot;:&quot;Amkette&quot;,&quot;productType&quot;:&quot;&quot;,&quot;__typename&quot;:&quot;Product&quot;},&quot;productUrl&quot;:&quot;/products/lexus-neo-wired-keyboard&quot;,&quot;image&quot;:{&quot;altText&quot;:null,&quot;one&quot;:&quot;https://cdn.shopify.com/s/files/1/0676/1273/7846/products/Lexus-Neo-Wired-Keyboard-Hero_64x64.png?v=1677497594&quot;,&quot;two&quot;:&quot;https://cdn.shopify.com/s/files/1/0676/1273/7846/products/Lexus-Neo-Wired-Keyboard-Hero_128x128.png?v=1677497594&quot;,&quot;four&quot;:&quot;https://cdn.shopify.com/s/files/1/0676/1273/7846/products/Lexus-Neo-Wired-Keyboard-Hero_256x256.png?v=1677497594&quot;,&quot;__typename&quot;:&quot;Image&quot;},&quot;properties&quot;:[],&quot;requiresShipping&quot;:true,&quot;options&quot;:[{&quot;name&quot;:&quot;Title&quot;,&quot;value&quot;:&quot;Default Title&quot;,&quot;__typename&quot;:&quot;ProductVariantOption&quot;}],&quot;sellingPlan&quot;:null,&quot;giftCard&quot;:false,&quot;deferredAmount&quot;:{&quot;amount&quot;:&quot;0.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;}},&quot;quantity&quot;:{&quot;items&quot;:{&quot;value&quot;:1,&quot;__typename&quot;:&quot;IntValueConstraint&quot;},&quot;__typename&quot;:&quot;ProposalMerchandiseQuantityByItem&quot;},&quot;totalAmount&quot;:{&quot;value&quot;:{&quot;amount&quot;:&quot;499.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;__typename&quot;:&quot;MoneyValueConstraint&quot;},&quot;recurringTotal&quot;:null,&quot;lineAllocations&quot;:[{&quot;stableId&quot;:&quot;298a6b8c1e083044adda50809faa8427&quot;,&quot;quantity&quot;:1,&quot;totalAmountBeforeReductions&quot;:{&quot;amount&quot;:&quot;499.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;totalAmountAfterDiscounts&quot;:{&quot;amount&quot;:&quot;499.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;totalAmountAfterLineDiscounts&quot;:{&quot;amount&quot;:&quot;499.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;checkoutPriceAfterDiscounts&quot;:{&quot;amount&quot;:&quot;499.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;checkoutPriceAfterLineDiscounts&quot;:{&quot;amount&quot;:&quot;499.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;checkoutPriceBeforeReductions&quot;:{&quot;amount&quot;:&quot;499.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;unitPrice&quot;:null,&quot;allocations&quot;:[{&quot;__typename&quot;:&quot;LineComponentTaxAllocation&quot;}],&quot;__typename&quot;:&quot;LineAllocation&quot;}],&quot;lineComponentsSource&quot;:null,&quot;lineComponents&quot;:[],&quot;__typename&quot;:&quot;MerchandiseLine&quot;}],&quot;__typename&quot;:&quot;FilledMerchandiseTerms&quot;},&quot;note&quot;:{&quot;customAttributes&quot;:[],&quot;message&quot;:&quot;&quot;,&quot;__typename&quot;:&quot;Note&quot;},&quot;scriptFingerprint&quot;:{&quot;signature&quot;:null,&quot;signatureUuid&quot;:null,&quot;lineItemScriptChanges&quot;:[],&quot;paymentScriptChanges&quot;:[],&quot;shippingScriptChanges&quot;:[],&quot;__typename&quot;:&quot;ScriptFingerprint&quot;},&quot;transformerFingerprintV2&quot;:null,&quot;buyerIdentity&quot;:{&quot;buyerIdentity&quot;:{&quot;presentmentCurrency&quot;:&quot;INR&quot;,&quot;countryCode&quot;:&quot;IN&quot;,&quot;market&quot;:{&quot;id&quot;:&quot;gid://shopify/Market/22556606774&quot;,&quot;handle&quot;:&quot;in&quot;,&quot;__typename&quot;:&quot;Market&quot;},&quot;__typename&quot;:&quot;GuestProfile&quot;},&quot;contactInfoV2&quot;:null,&quot;marketingConsent&quot;:[],&quot;shopPayOptInPhone&quot;:null,&quot;__typename&quot;:&quot;FilledBuyerIdentityTerms&quot;},&quot;checkoutCompletionTarget&quot;:&quot;ORDER&quot;,&quot;recurringTotals&quot;:[],&quot;subtotalBeforeTaxesAndShipping&quot;:{&quot;value&quot;:{&quot;amount&quot;:&quot;499.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;__typename&quot;:&quot;MoneyValueConstraint&quot;},&quot;totalSavings&quot;:{&quot;value&quot;:{&quot;amount&quot;:&quot;0.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;__typename&quot;:&quot;MoneyValueConstraint&quot;},&quot;runningTotal&quot;:{&quot;value&quot;:{&quot;amount&quot;:&quot;499.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;__typename&quot;:&quot;MoneyValueConstraint&quot;},&quot;total&quot;:{&quot;__typename&quot;:&quot;AnyConstraint&quot;},&quot;checkoutTotalBeforeTaxesAndShipping&quot;:null,&quot;checkoutTotalTaxes&quot;:null,&quot;checkoutTotal&quot;:{&quot;__typename&quot;:&quot;AnyConstraint&quot;},&quot;deferredTotal&quot;:null,&quot;hasOnlyDeferredShipping&quot;:false,&quot;subtotalBeforeReductions&quot;:{&quot;value&quot;:{&quot;amount&quot;:&quot;499.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;__typename&quot;:&quot;MoneyValueConstraint&quot;},&quot;duty&quot;:{&quot;totalDutyAmount&quot;:null,&quot;totalTaxAndDutyAmount&quot;:null,&quot;totalAdditionalFeesAmount&quot;:null,&quot;__typename&quot;:&quot;FilledDutyTerms&quot;},&quot;tax&quot;:{&quot;totalTaxAmount&quot;:null,&quot;totalTaxAndDutyAmount&quot;:null,&quot;totalAmountIncludedInTarget&quot;:{&quot;value&quot;:{&quot;amount&quot;:&quot;41.2&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;__typename&quot;:&quot;MoneyValueConstraint&quot;},&quot;exemptions&quot;:[],&quot;__typename&quot;:&quot;FilledTaxTerms&quot;},&quot;tip&quot;:{&quot;tipSuggestions&quot;:[{&quot;__typename&quot;:&quot;TipSuggestion&quot;,&quot;percentage&quot;:0.15,&quot;amount&quot;:{&quot;value&quot;:{&quot;amount&quot;:&quot;74.85&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;__typename&quot;:&quot;MoneyValueConstraint&quot;}},{&quot;__typename&quot;:&quot;TipSuggestion&quot;,&quot;percentage&quot;:0.18,&quot;amount&quot;:{&quot;value&quot;:{&quot;amount&quot;:&quot;89.82&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;__typename&quot;:&quot;MoneyValueConstraint&quot;}},{&quot;__typename&quot;:&quot;TipSuggestion&quot;,&quot;percentage&quot;:0.2,&quot;amount&quot;:{&quot;value&quot;:{&quot;amount&quot;:&quot;99.8&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;__typename&quot;:&quot;MoneyValueConstraint&quot;}},{&quot;__typename&quot;:&quot;TipSuggestion&quot;,&quot;percentage&quot;:0,&quot;amount&quot;:{&quot;value&quot;:{&quot;amount&quot;:&quot;0.0&quot;,&quot;currencyCode&quot;:&quot;INR&quot;,&quot;__typename&quot;:&quot;Money&quot;},&quot;__typename&quot;:&quot;MoneyValueConstraint&quot;}}],&quot;terms&quot;:{&quot;__typename&quot;:&quot;UnavailableTerms&quot;},&quot;__typename&quot;:&quot;TipWrapper&quot;},&quot;localizationExtension&quot;:{&quot;fields&quot;:[],&quot;__typename&quot;:&quot;LocalizationExtension&quot;},&quot;landedCostDetails&quot;:{&quot;incotermInformation&quot;:null,&quot;__typename&quot;:&quot;LandedCostDetails&quot;},&quot;dutiesIncluded&quot;:false,&quot;nonNegotiableTerms&quot;:null,&quot;optionalDuties&quot;:{&quot;buyerRefusesDuties&quot;:false,&quot;refuseDutiesPermitted&quot;:false,&quot;__typename&quot;:&quot;OptionalDuties&quot;},&quot;attribution&quot;:{&quot;attributions&quot;:[],&quot;__typename&quot;:&quot;Attribution&quot;},&quot;saleAttributions&quot;:{&quot;attributions&quot;:[],&quot;__typename&quot;:&quot;SaleAttributions&quot;},&quot;managedByMarketsPro&quot;:false,&quot;captcha&quot;:null,&quot;cartCheckoutValidation&quot;:null,&quot;alternativePaymentCurrency&quot;:null,&quot;__typename&quot;:&quot;Proposal&quot;},&quot;__typename&quot;:&quot;NegotiationResultAvailable&quot;},&quot;errors&quot;:[{&quot;code&quot;:&quot;BUYER_IDENTITY_MISSING_CONTACT_METHOD&quot;,&quot;localizedMessage&quot;:&quot;Missing a valid contact method.&quot;,&quot;nonLocalizedMessage&quot;:&quot;Missing a valid contact method.&quot;,&quot;localizedMessageHtml&quot;:&quot;Missing a valid contact method.&quot;,&quot;target&quot;:&quot;$.buyerIdentity&quot;,&quot;__typename&quot;:&quot;UnprocessableTermViolation&quot;},{&quot;code&quot;:&quot;TAX_NEW_TAX_MUST_BE_ACCEPTED&quot;,&quot;localizedMessage&quot;:&quot;A new tax line in the seller proposal must be accepted in order to continue.&quot;,&quot;nonLocalizedMessage&quot;:&quot;A new tax line in the seller proposal must be accepted in order to continue.&quot;,&quot;localizedMessageHtml&quot;:&quot;A new tax line in the seller proposal must be accepted in order to continue.&quot;,&quot;target&quot;:&quot;$&quot;,&quot;__typename&quot;:&quot;AcceptNewTermViolation&quot;},{&quot;code&quot;:&quot;PAYMENTS_UNACCEPTABLE_PAYMENT_AMOUNT&quot;,&quot;localizedMessage&quot;:&quot;Your payment couldn’t be processed because your order total has changed. Check your order total and try again.&quot;,&quot;nonLocalizedMessage&quot;:&quot;The sum of proposed payments cannot cover the total amount to be paid.&quot;,&quot;localizedMessageHtml&quot;:&quot;Your payment couldn’t be processed because your order total has changed. Check your order total and try again.&quot;,&quot;target&quot;:&quot;$.payment&quot;,&quot;__typename&quot;:&quot;UnprocessableTermViolation&quot;}],&quot;__typename&quot;:&quot;NegotiationResultPayload&quot;},&quot;__typename&quot;:&quot;Session&quot;}},&quot;d7cbb2e251147912fcb3a54465ba574d531e661429e5016b8f6827d9ffd45ed0{}&quot;:{&quot;shop&quot;:{&quot;defaultShippingDetails&quot;:{&quot;country&quot;:{&quot;code&quot;:&quot;IN&quot;,&quot;__typename&quot;:&quot;Country&quot;},&quot;zone&quot;:{&quot;code&quot;:&quot;DL&quot;,&quot;__typename&quot;:&quot;AddressZone&quot;},&quot;__typename&quot;:&quot;DefaultShippingDetails&quot;},&quot;__typename&quot;:&quot;CheckoutShopConfig&quot;},&quot;httpRequestInfo&quot;:{&quot;locale&quot;:&quot;en-IN&quot;,&quot;localeDirection&quot;:&quot;ltr&quot;,&quot;geolocation&quot;:{&quot;country&quot;:{&quot;code&quot;:&quot;IN&quot;,&quot;name&quot;:&quot;India&quot;,&quot;localizationKeys&quot;:{&quot;address2&quot;:null,&quot;postalCode&quot;:&quot;pincode_label&quot;,&quot;zone&quot;:&quot;state_label&quot;,&quot;__typename&quot;:&quot;AddressLocalizationKeys&quot;},&quot;labels&quot;:{&quot;firstName&quot;:&quot;First name&quot;,&quot;lastName&quot;:&quot;Last name&quot;,&quot;company&quot;:&quot;Company&quot;,&quot;address1&quot;:&quot;Address&quot;,&quot;address2&quot;:&quot;Apartment, suite, etc.&quot;,&quot;city&quot;:&quot;City&quot;,&quot;country&quot;:&quot;Country/region&quot;,&quot;zone&quot;:&quot;State&quot;,&quot;postalCode&quot;:&quot;PIN code&quot;,&quot;phone&quot;:&quot;Phone&quot;,&quot;__typename&quot;:&quot;AddressLabels&quot;},&quot;zones&quot;:[{&quot;code&quot;:&quot;AN&quot;,&quot;name&quot;:&quot;Andaman and Nicobar Islands&quot;,&quot;nameWithAlternates&quot;:[&quot;Andaman and Nicobar Islands&quot;,&quot;Andaman and Nicobar&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;AP&quot;,&quot;name&quot;:&quot;Andhra Pradesh&quot;,&quot;nameWithAlternates&quot;:[&quot;Andhra Pradesh&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;AR&quot;,&quot;name&quot;:&quot;Arunachal Pradesh&quot;,&quot;nameWithAlternates&quot;:[&quot;Arunachal Pradesh&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;AS&quot;,&quot;name&quot;:&quot;Assam&quot;,&quot;nameWithAlternates&quot;:[&quot;Assam&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;BR&quot;,&quot;name&quot;:&quot;Bihar&quot;,&quot;nameWithAlternates&quot;:[&quot;Bihar&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;CH&quot;,&quot;name&quot;:&quot;Chandigarh&quot;,&quot;nameWithAlternates&quot;:[&quot;Chandigarh&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;CG&quot;,&quot;name&quot;:&quot;Chhattisgarh&quot;,&quot;nameWithAlternates&quot;:[&quot;Chhattisgarh&quot;,&quot;Chattisgarh&quot;,&quot;CT&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;DN&quot;,&quot;name&quot;:&quot;Dadra and Nagar Haveli&quot;,&quot;nameWithAlternates&quot;:[&quot;Dadra and Nagar Haveli&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;DD&quot;,&quot;name&quot;:&quot;Daman and Diu&quot;,&quot;nameWithAlternates&quot;:[&quot;Daman and Diu&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;DL&quot;,&quot;name&quot;:&quot;Delhi&quot;,&quot;nameWithAlternates&quot;:[&quot;Delhi&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;GA&quot;,&quot;name&quot;:&quot;Goa&quot;,&quot;nameWithAlternates&quot;:[&quot;Goa&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;GJ&quot;,&quot;name&quot;:&quot;Gujarat&quot;,&quot;nameWithAlternates&quot;:[&quot;Gujarat&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;HR&quot;,&quot;name&quot;:&quot;Haryana&quot;,&quot;nameWithAlternates&quot;:[&quot;Haryana&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;HP&quot;,&quot;name&quot;:&quot;Himachal Pradesh&quot;,&quot;nameWithAlternates&quot;:[&quot;Himachal Pradesh&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;JK&quot;,&quot;name&quot;:&quot;Jammu and Kashmir&quot;,&quot;nameWithAlternates&quot;:[&quot;Jammu and Kashmir&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;JH&quot;,&quot;name&quot;:&quot;Jharkhand&quot;,&quot;nameWithAlternates&quot;:[&quot;Jharkhand&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;KA&quot;,&quot;name&quot;:&quot;Karnataka&quot;,&quot;nameWithAlternates&quot;:[&quot;Karnataka&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;KL&quot;,&quot;name&quot;:&quot;Kerala&quot;,&quot;nameWithAlternates&quot;:[&quot;Kerala&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;LA&quot;,&quot;name&quot;:&quot;Ladakh&quot;,&quot;nameWithAlternates&quot;:[&quot;Ladakh&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;LD&quot;,&quot;name&quot;:&quot;Lakshadweep&quot;,&quot;nameWithAlternates&quot;:[&quot;Lakshadweep&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;MP&quot;,&quot;name&quot;:&quot;Madhya Pradesh&quot;,&quot;nameWithAlternates&quot;:[&quot;Madhya Pradesh&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;MH&quot;,&quot;name&quot;:&quot;Maharashtra&quot;,&quot;nameWithAlternates&quot;:[&quot;Maharashtra&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;MN&quot;,&quot;name&quot;:&quot;Manipur&quot;,&quot;nameWithAlternates&quot;:[&quot;Manipur&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;ML&quot;,&quot;name&quot;:&quot;Meghalaya&quot;,&quot;nameWithAlternates&quot;:[&quot;Meghalaya&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;MZ&quot;,&quot;name&quot;:&quot;Mizoram&quot;,&quot;nameWithAlternates&quot;:[&quot;Mizoram&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;NL&quot;,&quot;name&quot;:&quot;Nagaland&quot;,&quot;nameWithAlternates&quot;:[&quot;Nagaland&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;OR&quot;,&quot;name&quot;:&quot;Odisha&quot;,&quot;nameWithAlternates&quot;:[&quot;Odisha&quot;,&quot;OD&quot;,&quot;Orissa&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;PY&quot;,&quot;name&quot;:&quot;Puducherry&quot;,&quot;nameWithAlternates&quot;:[&quot;Puducherry&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;PB&quot;,&quot;name&quot;:&quot;Punjab&quot;,&quot;nameWithAlternates&quot;:[&quot;Punjab&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;RJ&quot;,&quot;name&quot;:&quot;Rajasthan&quot;,&quot;nameWithAlternates&quot;:[&quot;Rajasthan&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;SK&quot;,&quot;name&quot;:&quot;Sikkim&quot;,&quot;nameWithAlternates&quot;:[&quot;Sikkim&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;TN&quot;,&quot;name&quot;:&quot;Tamil Nadu&quot;,&quot;nameWithAlternates&quot;:[&quot;Tamil Nadu&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;TS&quot;,&quot;name&quot;:&quot;Telangana&quot;,&quot;nameWithAlternates&quot;:[&quot;Telangana&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;TR&quot;,&quot;name&quot;:&quot;Tripura&quot;,&quot;nameWithAlternates&quot;:[&quot;Tripura&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;UP&quot;,&quot;name&quot;:&quot;Uttar Pradesh&quot;,&quot;nameWithAlternates&quot;:[&quot;Uttar Pradesh&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;UK&quot;,&quot;name&quot;:&quot;Uttarakhand&quot;,&quot;nameWithAlternates&quot;:[&quot;Uttarakhand&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;},{&quot;code&quot;:&quot;WB&quot;,&quot;name&quot;:&quot;West Bengal&quot;,&quot;nameWithAlternates&quot;:[&quot;West Bengal&quot;],&quot;__typename&quot;:&quot;AddressZone&quot;}],&quot;formatting&quot;:{&quot;edit&quot;:&quot;{country}_{firstName}{lastName}_{company}_{address1}_{address2}_{city}{province}{zip}_{phone}&quot;,&quot;show&quot;:&quot;{firstName} {lastName}_{company}_{address1}_{address2}_{zip} {city} {province}_{country}_{phone}&quot;,&quot;__typename&quot;:&quot;AddressFormat&quot;},&quot;autocompletionField&quot;:&quot;ADDRESS1&quot;,&quot;buildingNumberRequired&quot;:false,&quot;buildingNumberMayBeInAddress2&quot;:false,&quot;pureNumericPostalCode&quot;:true,&quot;postalCodeRequired&quot;:true,&quot;__typename&quot;:&quot;Country&quot;},&quot;zone&quot;:{&quot;code&quot;:&quot;DL&quot;,&quot;name&quot;:&quot;Delhi&quot;,&quot;__typename&quot;:&quot;AddressZone&quot;},&quot;coordinates&quot;:{&quot;latitude&quot;:28.6542,&quot;longitude&quot;:77.2373,&quot;__typename&quot;:&quot;GeographicalCoordinates&quot;},&quot;__typename&quot;:&quot;Geolocation&quot;},&quot;__typename&quot;:&quot;HttpRequestInfo&quot;},&quot;mobileCheckoutSdkConfig&quot;:{&quot;checkoutAuthenticationResult&quot;:null,&quot;checkoutSdkTheme&quot;:&quot;LIGHT&quot;,&quot;version&quot;:null,&quot;schema&quot;:null,&quot;variant&quot;:null,&quot;__typename&quot;:&quot;MobileCheckoutSdkConfig&quot;}}}" />
+    <meta name="serialized-graphql-endpoint" content="&quot;https://www.amkette.com/checkouts/unstable/graphql&quot;" />
+    <meta name="serialized-shop-pay-config"
+        content="{&quot;authorization&quot;:null,&quot;callback_token&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhbWtldHRlb2ZmaWNpYWwubXlzaG9waWZ5LmNvbSIsImF1ZCI6WyJhbWtldHRlb2ZmaWNpYWwubXlzaG9waWZ5LmNvbSIsInNob3AuYXBwIl0sIm5iZiI6MTcxMDE0NjIzOCwic2Vzc2lvbl90b2tlbiI6IlFYaGlRV0VyTnpSeVp6SkRRbFZhUmxCNWNFbzJUR052U25waWQwMWlUbXRMVFZCNWRFNXpWelZ1ZUZsQ1NtMUJOUzgyTURsVE9VNWtiMk0zVlRaUEsyRlhUbUp1VEdsdWFIZE1Walk0WXpkUWQyUTBZVGhRTVdONGRVaEtWRTFzUlZoVVZXSnhRMmhMYmpWTldUQnJiVmd5UzFwUE5WQjVlRVJpTjNCa2NHMVdVV0ZHV1ZCaVNXVlpjbkJQY0dsTGJtRk5NMlZxUlVKak1qQmxaM3BTVkRoNFJIaERkVTFDTjJkR1ptVmhLM2hRUldseGRtUnZia0ZzVEdzNGIxZDZRakZrY0daR1JYQkRRakJWVlVkdE5uZ3dhemwyVVVsaFUwNTNiM05wVW0xcGRrRlNOMk40Y1d0dGVXbzVVVGh1TDBJd1YzQTVUa3hKVFU5dkx5OVpObGRoVW1RdExYZHNVbXN6VHl0cWRuWkpSemREUkdZdExXOVZlV0ZMYUdoU1pteHVORVJyTDNJd1pqSjFVVUU5UFEiLCJzZXNzaW9uX2N1c3RvbWVyX2lkIjpudWxsLCJsb2dpbl93aXRoX3Nob3BfY3VzdG9tZXJfaWQiOm51bGwsInNob3BfYWNjb3VudF91dWlkIjpudWxsLCJpZGVudGl0eV9jdXN0b21lcl9pZCI6bnVsbCwiY3VzdG9tZXJfYXV0aGVudGljYXRpb25fYXV0aF9wcm92aWRlciI6bnVsbCwic3RvcmVmcm9udF9kaWdlc3QiOm51bGwsImV4cCI6MTcxMDE2NzgzOCwibGFuZGluZ19wYWdlIjoiXC9jb2xsZWN0aW9uc1wva2V5Ym9hcmRzIn0.hPkDzVRgSyNJbmpYg_i8aiCW1EsEsqPDiyEVtTLIRGg&quot;,&quot;checkout_as_guest_url&quot;:&quot;https://www.amkette.com/checkouts/cn/c1-75ad9c8ddc1ddae48c84c6f1b62b97d7?locale=en-IN&amp;shop_pay_logout=true&amp;skip_shop_pay=true&quot;,&quot;from_classic&quot;:false,&quot;iframe_token&quot;:&quot;aVpZUm9pZnoyNkxIUHlDYk5RTzFtSy9ONUh1VnBUMFVFUTQ0ZzBCZUNvTkg3YU9GUDRCN1k1aC84VnhsZHA3SC0tRHhRN3NGNVNoSXI5S0x1a3o5ZGlLQT09--c4ac2bd30a7bb38ab438c1eb042b881cc7db4838&quot;,&quot;pre_select_installments&quot;:false,&quot;redirect_source&quot;:null,&quot;redirect_url&quot;:&quot;N295c2NDMEVWSk0rTlZjdUt2aWVUMi8vekw3aWFaNTdJdk5DVUVGS0t2T2FkWlo2aFdvTXNqYWpsZzFNdzFlVzV2RjVTY2xITlMvWEZDMDdxemltUG5rcWlkMTJXbk4zTHpZNFcyT3A5YlZ3Zk4ramNybmEvTWxtZDU0eHR0M25KaVc2M0hTYkF1Q1NJZmQwZDQrWHluRGM3S2JoamYySU16Zjgrc3gwbHlyeGYwWXlTa1hqNi9rTktsYVZ0SW4yWlBWM2h0TXc4Mk8vMnQ3L2x0UmRJN0tZUi9neTd6M2dkbkZmbWptcHZxVTAzOXgxckRJeGVuYVJ6WFQ3Y3ZYZVFrZnNJbzc0MFVZWXRhaTczeVBwdHdoZ0lCeExYS0Y1ckJLeXpjQm12aHFOSkVwL01uWVg2eFhrZmVhbVdISnQ4NlhnL0JnREFlM0lxMjVXMnpwWUlOcGc3VGtWTTZ3dU05NnpucDRBYXk2bFB5Myt3RVYzQ0VIUDAvdXdka1o2WDlPNXdkMzA5dzNnUTl4U21Rd0c3MEpDb1VNa2c3WjMydG9zTUVCUFN0T1RkZmtnM25aVCt6Zis1Y2lRNk05UWYyNmZTdFRtY3k0UnNhRVhlMnVyZUI2SllIR0kwalJaWkNRdlZ1MFg2Q0k5ampsOUNJZDMrN25FQ3lZL2JyOW52S253OE1qOGJ2Umh2d3RueG1JeTlDdFBFSHpLMEJuR2JiM2ZPVVQ1Tys5MGd1akhIZ2xvZFNrR1lxdGFVeUxkT1QwSEppMko3OU83WHBQVVJJRmphbDNTSTZLL2lUTDJPa25TNmJJMStrWE9VZWpoVlhDb2tURm9Ja2NZYzBvWk50cG9JSDB5Zjg2WVNqUlpQV3c1RHhaaFZEK05hcGRWcXZvVFM5dHVFeWtKZWt3eFVtNFJBR3FWY3Q4bUVKcVlDdWx3ZWEvR2J4ZmdoclBqa1NxcGFhcDljZ0Z6ZngzK05vM1NFZUxOcWFSNlFPUzVCaklBTytkbmxFd2prajVsckNacTcxY2FNYzdCR0JMUUFsU04vOHBmb3lFK1l3SnZyYVByVGtla1dWS1dLenJoazZsQ1R6c25ZeGs5ZjNtY0ZaMmtOMElZeXQ4aEtDMkNSWXc0anFZVVc1Qk5jYWtQSU1jQW01djZ3UU1wRFJRUHVKTGlKbTZCdSt5Tyt2NUE1TlJ3amhYR0VmQ0dlYXY2ckpzekRtT2ZQbUNXalp0VitiTmRUTjZQTTMwMys0bncycHJWZEJNeG9JNjJkcklEditGVktrc1BQcTYvRUYxVlJoMUhTeGZTVTBLN0xxeGdTUkd6b3kvUGE1ZS85RVdEMGt2TDh3VmJOK0VWTksxYzNPTGlDWmtzdXBaN2c5TFNRczUrT1dKZEhONCtHSllVTmxKRGtZOGd4Y1hsQU5vRE5GKzY5RVM2NlFNRVpPUjFvNzJSQjJvZWpja1ZPQVNoSjdReFU1QlZrNW81SmR3Yi8rSzNPTGZWTitrbmpKMVRSMkpJV1RYdE8rVGxldGtHNmNzYmVKM01ic28wVE1HL0p4ZXF5d1lZRHV6WS8zNXQwNVhHSnhUQW5EbWJNRGhPbXFUd29VNmg1S0ozODNWUUs1Rk5Pa1VlYWphMWsyQWI3YU5JdC9HZXhFS3dYNUZlcU9CRWVxS3VTaVh4OXZ5NlFnQmxITm9vdkt2a29aa3hUdVR3UWZTU1RzdE1UbmJ6VWVuUW8rWktBaGVKc0s4Y29nc1dkS2FwdHpRMnlsckRZYkgwckprR0c2UHh0KzU5cW84eFUxTWxML1gyeVhxYi94TWNaS1dnQnpwUTF3NWl1MDYxR0pEbE9pMnU3cXZHMmM2REw0ajlvSXhXVFU4SkZWNFZkK0F6YkJYM2xCMFNJOVM2OVpXUlQ2ZFFPaXVES2taMTl0Nlo4RnR1MlJadGFRTlZUNGdVeXkwVkIzQ1BUWDNEbm9Md2JCdHRiNWNqd1pDdXBpTUE4Wk5mRHZTMEcyU3VrUCt3ejhyUnRzOFgxMmlDc3RCZ3ptMk1IYlJYKzVLQkN2RjNhOEtVMEVtN1Nwa3psZUx6RnJyY0FYbjhmb25RZnkxbmEvL1JqUW9ubU5TMjhRamYwaDBkUVdQb2xYQjhxdlcvZ1hqZnNpdkNGekM3bTBMZHRLaFk5K0lza0czLzUzcGNBVkVxRlkxOGNWMXBoSmY3QmgzNnNTbUNUbkJKM3RMR29RbXJyZkN3eDdVQ0hTQUJuN0QxWnBsTThZZlAvUG5xUE9GV0JlZzdOSlNlVlBXd2FGVmM3Wk5zTk4zcTZLTC9ENXR1OUVHRW9nRUordVc0OVo4cG1zTWFmQWpOcTBYWGdlQy9lVUJYczN0b0NtVmpYQ1RvV2NDbC0tYVJFU2xDMFI1b1Bua1dJckwvbElGUT09--4db4250ffc315f69d6ab5dfe7f704899c096497e&quot;,&quot;tracking_unique&quot;:&quot;2f1117b6-864b-405b-ab26-892d5e3b1d9f&quot;,&quot;tracking_visit&quot;:&quot;94b3b11a-6a10-434f-953c-6c9214b38c8a&quot;,&quot;transaction_params&quot;:&quot;encrypted_params=WW81c3BmQmlEWHQ2YmVMSGlLNGFsejZiVjRySUFjcmg2UHNmYlJhMXBOalBITlRKTWoxSURmRmdqV08vcjVVTXNZOWRKQjJmc1h0VTJ4S1JjMm1WNmc9PS0tWFpBanVodmR5TE9XZEV5R295ekJXUT09--f5a008e06fbc4af34ec5bf6f977d420ec1fdc726&quot;,&quot;web_url&quot;:&quot;https://www.amkette.com/checkouts/cn/c1-75ad9c8ddc1ddae48c84c6f1b62b97d7?locale=en-IN&amp;shop_pay_logout=true&amp;skip_shop_pay=true&quot;}" />
+    <meta name="serialized-deploy-stage" content="&quot;production&quot;" />
+    <meta name="serialized-public-path"
+        content="&quot;https://cdn.shopify.com/shopifycloud/checkout-web/assets/&quot;" />
+    <meta name="serialized-receipt"
+        content="{&quot;id&quot;:null,&quot;exists&quot;:false,&quot;inProgress&quot;:false,&quot;orderStatusPageUrl&quot;:null,&quot;shopPay&quot;:false}" />
+    <meta name="serialized-request-id" content="&quot;862a38c6e9d75fda&quot;" />
+    <meta name="serialized-server-handling" content="&quot;fast&quot;" />
+    <meta name="serialized-worker-version" content="&quot;fast&quot;" />
+    <meta name="serialized-server-render" content="&quot;render&quot;" />
+    <meta name="serialized-session-finished" content="false" />
+    <meta name="serialized-api-client-id" content="580111" />
+    <meta name="serialized-redesign-enabled" content="true" />
+    <!-- <meta name="serialized-shop"
+        content="{&quot;id&quot;:&quot;gid://shopify/Shop/67612737846&quot;,&quot;name&quot;:&quot;Amkette&quot;,&quot;domain&quot;:&quot;www.amkette.com&quot;,&quot;myshopifyDomain&quot;:&quot;amketteofficial.myshopify.com&quot;}" />
+    <meta name="serialized-login-url"
+        content="&quot;https://www.amkette.com/account/login?checkout_url=%2Fcheckouts%2Fcn%2Fc1-75ad9c8ddc1ddae48c84c6f1b62b97d7%3Flocale%3Den-IN&quot;" />
+    <meta name="serialized-logout-url"
+        content="&quot;https://www.amkette.com/account/logout?return_url=%2Fcheckouts%2Fcn%2Fc1-75ad9c8ddc1ddae48c84c6f1b62b97d7%3Flocale%3Den-IN&quot;" />
+    <meta name="serialized-invoice-login-type" content="null" /> -->
+    <div id="app"></div>
+</body>
+
+</html>
